@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <!--开启将数据库中下划线风格的命名映射为Java中驼峰命名风格-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!--类的别名-->
+    <typeAliases>
+        <typeAlias type="com.kaishengit.entity.User" alias="User"/>
+        <typeAlias type="com.kaishengit.entity.Tag" alias="Tag"/>
+    </typeAliases>
+
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
+
+    <!-- 环境：开发 测试 线上，default来决定当前使用的配置 -->
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql:///db_25"/>
+                <property name="username" value="root"/>
+                <property name="password" value="longwear"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--加载mapper配置文件-->
+    <mappers>
+        <!--classpath路径:源代码根目录-->
+        <mapper class="com.kaishengit.mapper.UserMapper"/>
+        <!--<mapper class="com.kaishengit.mapper.MovieMapper"/>-->
+        <mapper resource="mapper/MovieMapper.xml"/>
+        <mapper resource="mapper/StudentMapper.xml"/>
+        <mapper resource="mapper/SchoolMapper.xml"/>
+        <mapper resource="mapper/TagMapper.xml"/>
+    </mappers>
+</configuration>

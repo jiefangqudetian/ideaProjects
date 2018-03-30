@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--推荐使用 类似类的完全限定名-->
+<mapper namespace="com.kaishengit.mapper.StudentMapper">
+
+    <cache/>
+    <select id="findAll" resultMap="studentMap">
+        select * from t_student
+    </select>
+    
+    <select id="findById" parameterType="int" resultMap="studentMap">
+        select * from t_student where id = #{id}
+    </select>
+    
+    <select id="findByIdWithTag" parameterType="int" resultMap="studentMapWithTag">
+        select stu.id,stu.name,stu.age,stu.school_id,st.tid,tag.tag_name FROM
+        t_student stu inner JOIN t_stu_tag st ON stu.id=st.sid INNER JOIN t_tag tag
+        ON  st.tid = tag.id WHERE stu.id = #{id}
+    </select>
+
+
+
+
+
+
+    
+    <resultMap id="studentMap" type="com.kaishengit.entity.Student" extends="baseMap">
+        <association property="school" javaType="com.kaishengit.entity.School"
+                     column="school_id" select="com.kaishengit.mapper.SchoolMapper.findById"/>
+        <collection property="tagList" ofType="com.kaishengit.entity.Tag"
+                    column="id" select="com.kaishengit.mapper.TagMapper.findByStudentId"/>
+
+    </resultMap>
+    
+    <resultMap id="studentMapWithTag" type="com.kaishengit.entity.Student" extends="baseMap">
+        <collection property="tagList" ofType="com.kaishengit.entity.Tag">
+            <id column="tid" property="id"/>
+            <result column="tag_name" property="tagName"/>
+        </collection>
+    </resultMap>
+
+
+
+
+
+
+
+
+    <resultMap id="baseMap" type="com.kaishengit.entity.Student">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="school_id" property="schoolId"/>
+    </resultMap>
+</mapper>
