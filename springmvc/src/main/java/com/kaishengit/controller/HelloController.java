@@ -20,4 +20,9 @@ public class HelloController {
     public @ResponseBody void Hi(){
         System.out.println("hi");
     }
+
+    @GetMapping("/login")
+    public String Login(){
+        return "login";
+    }
 }

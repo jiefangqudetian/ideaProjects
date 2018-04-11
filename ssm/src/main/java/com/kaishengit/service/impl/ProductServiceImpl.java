@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class ProductServiceImpl implements ProductService{
@@ -97,6 +98,21 @@ public class ProductServiceImpl implements ProductService{
     public void updateProduct(Product product) {
         productMapper.updateProduct(product);
         logger.info("修改商品{}",product);
+    }
+
+    /**
+     *根据页码和条件查询
+     * @date 2018/4/11
+     * @param [pageNo 页码, params 查询参数Map集合]
+     * @return com.github.pagehelper.PageInfo<com.kaishengit.entity.Product>
+     */
+    @Override
+    public PageInfo<Product> findAllProductsByPageNoAndQueryParam(Integer pageNo, Map<String, Object> queryParamMap) {
+
+        PageHelper.startPage(pageNo,10);
+
+        List<Product> productList = productMapper.findAllWithTypeAndParams(queryParamMap);
+        return new PageInfo<>(productList);
     }
 
 

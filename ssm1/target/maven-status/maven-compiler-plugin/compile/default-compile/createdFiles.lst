@@ -1,0 +1,16 @@
+com\kaishengit\entity\ProductExample$GeneratedCriteria.class
+com\kaishengit\entity\ProductExample$Criterion.class
+com\kaishengit\entity\ProductType.class
+com\kaishengit\entity\ProductTypeExample$Criteria.class
+com\kaishengit\entity\ProductExample$Criteria.class
+com\kaishengit\mapper\ProductTypeMapper.class
+com\kaishengit\entity\ProductExample.class
+com\kaishengit\exception\NotFoundException.class
+com\kaishengit\entity\ProductTypeExample$GeneratedCriteria.class
+com\kaishengit\service\ProductService.class
+com\kaishengit\controller\ProductController.class
+com\kaishengit\entity\Product.class
+com\kaishengit\entity\ProductTypeExample.class
+com\kaishengit\service\impl\ProductServiceImpl.class
+com\kaishengit\mapper\ProductMapper.class
+com\kaishengit\entity\ProductTypeExample$Criterion.class

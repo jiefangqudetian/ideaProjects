@@ -11,7 +11,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/product")
@@ -32,10 +34,27 @@ public class ProductController {
     }
 
     @GetMapping
-    public String list(@RequestParam(defaultValue = "1",name = "p",required = false) Integer pageNo, Model model){
+    public String list(@RequestParam(defaultValue = "1",name = "p",required = false) Integer pageNo,
+                       @RequestParam(required = false) String productName,
+                       @RequestParam(required = false) String place,
+                       @RequestParam(required = false) Float minPrice,
+                       @RequestParam(required = false) Float maxPrice,
+                       @RequestParam(required = false) Integer typeId,
+                       Model model){
 
-        PageInfo<Product> pageInfo = productService.findAllProductsByPageNo(pageNo);
+        Map<String,Object> queryParamMap = new HashMap<>();
+        queryParamMap.put("productName",productName);
+        queryParamMap.put("place",place);
+        queryParamMap.put("minPrice",minPrice);
+        queryParamMap.put("maxPrice",maxPrice);
+        queryParamMap.put("typeId",typeId);
+        PageInfo<Product> pageInfo = productService.findAllProductsByPageNoAndQueryParam(pageNo,queryParamMap);
+        //PageInfo<Product> pageInfo = productService.findAllProductsByPageNo(pageNo);
+
+        Integer num = (pageNo-1)*10;
+        model.addAttribute("num",num);
         model.addAttribute("pageInfo",pageInfo);
+        model.addAttribute("typeList",productService.findAllProductType());
         System.out.println("查询所有");
         return "product/list";
     }

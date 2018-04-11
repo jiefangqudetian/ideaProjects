@@ -15,7 +15,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         //请求的URL
         String url = request.getRequestURI();
         System.out.println(url);
-        if (url.startsWith("/static/") || url.equals("favicon.ico")){
+        if (url.startsWith("/static/") || url.equals("favicon.ico") || url.startsWith("/login")){
             return true;
         }
         //首页 "" /
@@ -24,9 +24,9 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         }
 
 
-       /* HttpSession session = request.getSession();
+        /*HttpSession session = request.getSession();
         if (session.getAttribute("curr_acount") == null){
-            response.sendRedirect("/");
+            response.sendRedirect("/login");
         }*/
         return true;
     }
