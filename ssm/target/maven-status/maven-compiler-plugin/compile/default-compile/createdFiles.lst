@@ -1,0 +1,8 @@
+com\kaishengit\entity\ProductType.class
+com\kaishengit\mapper\ProductTypeMapper.class
+com\kaishengit\exception\NotFoundException.class
+com\kaishengit\service\ProductService.class
+com\kaishengit\controller\ProductController.class
+com\kaishengit\entity\Product.class
+com\kaishengit\service\impl\ProductServiceImpl.class
+com\kaishengit\mapper\ProductMapper.class

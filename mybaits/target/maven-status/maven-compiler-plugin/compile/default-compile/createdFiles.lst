@@ -1,0 +1,11 @@
+com\kaishengit\entity\Student.class
+com\kaishengit\mapper\SchoolMapper.class
+com\kaishengit\mapper\UserMapper.class
+com\kaishengit\entity\Tag.class
+com\kaishengit\util\SqlSessionFactoryUtil.class
+com\kaishengit\entity\Movie.class
+com\kaishengit\entity\School.class
+com\kaishengit\mapper\MovieMapper.class
+com\kaishengit\mapper\StudentMapper.class
+com\kaishengit\entity\User.class
+com\kaishengit\mapper\TagMapper.class
