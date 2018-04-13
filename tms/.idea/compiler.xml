@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tms-commons" />
+        <module name="tms-finance-web" />
+        <module name="tms-manager-web" />
+        <module name="tms-service" />
+        <module name="tms-service-impl" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tms-commons" target="1.8" />
+      <module name="tms-finance-web" target="1.5" />
+      <module name="tms-manager-web" target="1.8" />
+      <module name="tms-service" target="1.8" />
+      <module name="tms-service-impl" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+com\kaishengit\tms\mapper\AccountRolesMapper.class
+com\kaishengit\tms\mapper\AccountLoginLogMapper.class
+com\kaishengit\tms\service\impl\AccountServiceImpl.class
+com\kaishengit\tms\mapper\PermissionMapper.class
+com\kaishengit\tms\mapper\RolesPermissionMapper.class
+com\kaishengit\tms\service\impl\RolePermissionServiceImpl.class
+com\kaishengit\tms\mapper\RolesMapper.class
+com\kaishengit\tms\mapper\AccountMapper.class
