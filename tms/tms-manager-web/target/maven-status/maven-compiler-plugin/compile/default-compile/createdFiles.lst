@@ -1,5 +1,0 @@
-com\kaishengit\tms\controller\HomeController.class
-com\kaishengit\tms\controller\RolesController.class
-com\kaishengit\tms\controller\PermissionController.class
-com\kaishengit\tms\controller\AccountController.class
-com\kaishengit\tms\controller\exception\NotFoundException.class
