@@ -82,7 +82,8 @@
                                         <fmt:formatDate value="${account.createTime}"></fmt:formatDate>
                                     </td>
                                     <td>
-                                        <a href="/manage/account/${account.id}/edit"><i class="fa fa-edit"></i></a>
+                                        <a href="/manage/account/${account.id}/edit"><i class="fa fa-pencil"></i></a>
+                                        <a class="delLink" rel="${account.id}" href="javascript:;"><i class="fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 
@@ -100,7 +101,28 @@
 <!-- ./wrapper -->
 
 <%@include file="../../include/js.jsp"%>
+<script src="/static/plugins/treegrid/js/jquery.treegrid.min.js"></script>
+<script src="/static/plugins/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+<script src="/static/plugins/layer/layer.js"></script>
 <script>
+    $(function(){
+        //删除
+        $(".delLink").click(function () {
+            var id = $(this).attr("rel");
+            layer.confirm("确定要删除该用户？",function (index) {
+                layer.close(index);
+                $.get("/manage/account/"+id+"/del").done(function (result) {
+                    if(result.status == 'success') {
+                        window.history.go(0);
+                    } else {
+                        layer.msg(result.message);
+                    }
+                }).error(function () {
+                    layer.msg("服务器忙");
+                });
+            })
+        });
+    });
 </script>
 </body>
 </html>

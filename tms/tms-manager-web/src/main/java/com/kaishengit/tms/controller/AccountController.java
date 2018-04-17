@@ -2,8 +2,10 @@ package com.kaishengit.tms.controller;
 
 import com.google.common.collect.Maps;
 import com.kaishengit.tms.controller.exception.NotFoundException;
+import com.kaishengit.tms.dto.ResponseBean;
 import com.kaishengit.tms.entity.Account;
 import com.kaishengit.tms.entity.Roles;
+import com.kaishengit.tms.exception.ServiceException;
 import com.kaishengit.tms.service.AccountService;
 import com.kaishengit.tms.service.RolePermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -92,6 +94,17 @@ public class AccountController {
         redirectAttributes.addFlashAttribute("message","修改账号成功");
 
         return "redirect:/manage/account";
+    }
+
+    @GetMapping("/{id:\\d+}/del")
+    public @ResponseBody ResponseBean deleteAccount(@PathVariable Integer id){
+
+        try{
+            accountService.delAccountById(id);
+            return ResponseBean.success();
+        }catch(ServiceException ex){
+            return ResponseBean.error(ex.getMessage());
+        }
     }
 
 

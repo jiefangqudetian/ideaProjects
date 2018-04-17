@@ -26,6 +26,8 @@ public class AccountServiceImpl implements AccountService {
     private AccountLoginLogMapper accountLoginLogMapper;
     @Autowired
     private AccountRolesMapper accountRolesMapper;
+
+
     /**
      * 系统登录
      *
@@ -172,6 +174,38 @@ public class AccountServiceImpl implements AccountService {
         }
 
         logger.info("修改账号{}",account);
+    }
+
+    /**
+     * 根据用户id删除用户
+     *
+     * @param id
+     * @return void
+     * @date 2018/4/17
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void delAccountById(Integer id) {
+        //1.根据Id查找用户
+        Account account = accountMapper.selectByPrimaryKey(id);
+
+        //2.删除用户角色关联关系表
+        AccountRolesExample accountRolesExample = new AccountRolesExample();
+        accountRolesExample.createCriteria().andAccountIdEqualTo(id);
+        accountRolesMapper.deleteByExample(accountRolesExample);
+
+        //3.删除用户登录日志关联关系表
+        AccountLoginLogExample accountLoginLogExample = new AccountLoginLogExample();
+        accountLoginLogExample.createCriteria().andAccountIdEqualTo(id);
+        accountLoginLogMapper.deleteByExample(accountLoginLogExample);
+
+        //4.删除用户表
+        AccountExample accountExample = new AccountExample();
+        accountExample.createCriteria().andIdEqualTo(id);
+        accountMapper.deleteByExample(accountExample);
+
+        logger.info("删除用户{}",account);
+
     }
 
 

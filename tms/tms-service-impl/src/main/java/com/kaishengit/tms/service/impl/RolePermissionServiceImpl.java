@@ -248,6 +248,31 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         return rolesMapper.findRolesByAccountId(id);
     }
 
+    /**
+     * 根据权限id查找权限
+     *
+     * @param id
+     * @return com.kaishengit.tms.entity.Permission
+     * @date 2018/4/17
+     */
+    @Override
+    public Permission findPermissionById(Integer id) {
+        return permissionMapper.selectByPrimaryKey(id);
+    }
+
+    /**
+     * 修改权限
+     *
+     * @param permission
+     * @return void
+     * @date 2018/4/17
+     */
+    @Override
+    public void updatePermission(Permission permission) {
+
+        permissionMapper.updateByPrimaryKeySelective(permission);
+    }
+
 
     /**  
      * 将查询数据库的角色列表转换为树形集合结果

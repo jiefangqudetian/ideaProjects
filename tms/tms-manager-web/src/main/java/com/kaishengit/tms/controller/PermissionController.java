@@ -74,13 +74,20 @@ public class PermissionController {
         }
     }
 
-    /*@GetMapping("/update")
-    public String updatePermission(Model model){
+    @GetMapping("/{id:\\d+}/edit")
+    public String updatePermission(@PathVariable Integer id, Model model){
+        Permission permission = rolePermissionService.findPermissionById(id);
+        model.addAttribute("permission",permission);
 
+        return "manage/permission/edit";
     }
 
-    @PostMapping("/update")
-    public String updatePermission(Permission permission){
+    @PostMapping("/{id:\\d+}/edit")
+    public String updatePermission(Permission permission,RedirectAttributes redirectAttributes){
 
-    }*/
+        rolePermissionService.updatePermission(permission);
+        redirectAttributes.addFlashAttribute("message","修改成功");
+
+        return  "redirect:/manage/permission";
+    }
 }

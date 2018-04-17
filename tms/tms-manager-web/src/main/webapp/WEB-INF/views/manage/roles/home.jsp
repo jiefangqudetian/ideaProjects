@@ -50,7 +50,6 @@
                                         角色名称:<strong>${roles.rolesName}</strong>
                                         <span class="pull-right">
                                             <a style="color: #fff" href="/manage/roles/${roles.id}/edit"><i class="fa fa-pencil"></i></a>
-                                            <%--<a style="color: #fff" class="delLink" rel="${roles.id}" href="javascript:;"><i class="fa fa-trash"></i></a>--%>
                                             <a style="color: #fff;" class="delLink" rel="${roles.id}" href="javascript:;"><i class="fa fa-trash"></i></a>
                                         </span>
                                     </td>

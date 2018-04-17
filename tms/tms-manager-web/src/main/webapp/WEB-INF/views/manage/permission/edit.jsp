@@ -17,7 +17,7 @@
     <!-- =============================================== -->
 
     <jsp:include page="../../include/sider.jsp">
-        <jsp:param name="menu" value="home"/>
+        <jsp:param name="menu" value="manage_permission"/>
     </jsp:include>
 
     <!-- =============================================== -->
@@ -44,17 +44,18 @@
                     <form method="post" id="saveForm">
                         <div class="form-group">
                             <label>权限名称</label>
-                            <input type="text" name="permissionName" class="form-control">
+                            <input type="hidden" name="id" class="form-control" value="${permission.id}">
+                            <input type="text" name="permissionName" class="form-control" value="${permission.permissionName}">
                         </div>
                         <div class="form-group">
                             <label>权限代号</label>
-                            <input type="text" name="permissionCode" class="form-control">
+                            <input type="text" name="permissionCode" class="form-control" value="${permission.permissionCode}">
                         </div>
                         <div class="form-group">
                             <label>权限类型</label>
                             <select name="permissionType" class="form-control">
-                                <option value="菜单">菜单</option>
-                                <option value="按钮">按钮</option>
+                                <option value="菜单" ${permission.permissionType=="菜单"?'selected':''}>菜单</option>
+                                <option value="按钮" ${permission.permissionType=="按钮"?'selected':''}>按钮</option>
                             </select>
                         </div>
                         <div class="form-group">

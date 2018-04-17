@@ -100,4 +100,20 @@ public interface RolePermissionService {
      * @return java.util.List<com.kaishengit.tms.entity.Roles>
      */
     List<Roles> findRolesByAccountId(Integer id);
+
+    /**
+     * 根据权限id查找权限
+     * @date 2018/4/17
+     * @param [id]
+     * @return com.kaishengit.tms.entity.Permission
+     */
+    Permission findPermissionById(Integer id);
+
+    /**
+     * 修改权限
+     * @date 2018/4/17
+     * @param [permission]
+     * @return void
+     */
+    void updatePermission(Permission permission);
 }

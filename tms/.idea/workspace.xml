@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a4a90f7-a0bd-43dd-a85e-c02d36ae1fac" name="Default" comment="" />
+    <list default="true" id="5a4a90f7-a0bd-43dd-a85e-c02d36ae1fac" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/AccountController.java" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/AccountController.java" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/new.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/new.jsp" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java" afterPath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java" />
+      <change beforePath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java" afterPath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/tms-commons/target/" />
     <ignored path="$PROJECT_DIR$/tms-service/target/" />
     <ignored path="$PROJECT_DIR$/tms-service-impl/target/" />
@@ -30,46 +45,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/HomeController.java">
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-              <folding>
-                <element signature="e#2018#2019#0" expanded="true" />
-                <element signature="e#2047#2048#0" expanded="true" />
-                <element signature="e#2109#2110#0" expanded="true" />
-                <element signature="e#2143#2144#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="85" column="73" lean-forward="false" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="401.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/error/401.jsp">
+      <file leaf-file-name="RolePermissionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2376">
+              <caret line="112" column="11" lean-forward="false" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1254">
+              <caret line="57" column="97" lean-forward="false" selection-start-line="57" selection-start-column="97" selection-end-line="57" selection-end-column="97" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="946">
+              <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <caret line="48" column="48" lean-forward="false" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-shiro.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spring-shiro.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/resources/spring-shiro.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tms-service-impl/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="-154">
+              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -122,29 +152,16 @@
         <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/dto/ResponseBean.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/new.jsp" />
         <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/Permission.java" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/exception/NotFoundException.java" />
         <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/Roles.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/edit.jsp" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/RolesController.java" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/delete.jsp" />
-        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/RolesMapper.java" />
-        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp" />
         <option value="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/Account.java" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/AccountMapper.java" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/AccountController.java" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/RolesMapper.xml" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/new.jsp" />
-        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/AccountMapper.xml" />
         <option value="$PROJECT_DIR$/tms-manager-web/pom.xml" />
         <option value="$PROJECT_DIR$/tms-service-impl/pom.xml" />
@@ -152,8 +169,21 @@
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/resources/ehcache.xml" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/shiro/ShiroRealm.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/error/401.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/resources/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/new.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp" />
+        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/AccountController.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp" />
+        <option value="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java" />
+        <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -216,13 +246,89 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tms" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tms-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="tms" type="b2602c69:ProjectViewProjectNode" />
               <item name="tms-service-impl" type="462c0819:PsiDirectoryNode" />
@@ -355,6 +461,30 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="clean install" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
     <configuration name="tms-manager-web" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -419,10 +549,11 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Maven.tms-manager-web" />
-      <item index="1" class="java.lang.String" itemvalue="Application.HomeController" />
-      <item index="2" class="java.lang.String" itemvalue="Application.AccountServiceImpl" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.clean install" />
+      <item index="2" class="java.lang.String" itemvalue="Application.HomeController" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AccountServiceImpl" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -459,14 +590,18 @@
       <workItem from="1523893800549" duration="2425000" />
       <workItem from="1523925915455" duration="25000" />
       <workItem from="1523926298505" duration="775000" />
+      <workItem from="1523928208338" duration="7314000" />
+      <workItem from="1523938053830" duration="3382000" />
+      <workItem from="1523948386305" duration="877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82768000" />
+    <option name="totallyTimeSpent" value="94341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -477,15 +612,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3687023" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5874363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6689304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29694656" sideWeight="0.49405771" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27099237" sideWeight="0.49405771" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26641223" sideWeight="0.5059423" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25419846" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -540,21 +675,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java</url>
-          <line>114</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java</url>
-          <line>117</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -563,79 +684,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/treegrid/img/collapse.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/css.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/js.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/dto/ResponseBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/include/navhead.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/include/css.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5294">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/PermissionExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/Permission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -646,87 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/new.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2398">
-          <caret line="109" column="37" lean-forward="false" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/exception/NotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="76" column="6" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="84" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/RolesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="107" column="38" lean-forward="false" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="83" column="72" lean-forward="false" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="96" column="26" lean-forward="false" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
-          <caret line="80" column="54" lean-forward="false" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="98" lean-forward="false" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
         </state>
       </provider>
     </entry>
@@ -751,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="70" column="69" lean-forward="false" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.14.RELEASE/spring-context-4.3.14.RELEASE-sources.jar!/org/springframework/ui/ModelMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -779,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1843">
-          <caret line="151" column="55" lean-forward="false" selection-start-line="151" selection-start-column="55" selection-end-line="151" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.jar!/org/springframework/util/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -797,20 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="63" column="126" lean-forward="false" selection-start-line="63" selection-start-column="126" selection-end-line="63" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/new.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="54" column="97" lean-forward="false" selection-start-line="54" selection-start-column="97" selection-end-line="54" selection-end-column="97" />
         </state>
       </provider>
     </entry>
@@ -849,21 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/resources/ehcache.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -872,10 +804,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/shiro/ShiroRealm.java" />
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="70">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -884,6 +816,208 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-770">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="44" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="99" column="11" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="99" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/dto/ResponseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="475" column="0" lean-forward="false" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="405" column="0" lean-forward="false" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="532" column="0" lean-forward="false" selection-start-line="532" selection-start-column="0" selection-end-line="532" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/RolesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="72" column="35" lean-forward="false" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="206" column="36" lean-forward="false" selection-start-line="206" selection-start-column="36" selection-end-line="206" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="62" column="124" lean-forward="false" selection-start-line="62" selection-start-column="124" selection-end-line="62" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="57" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="83" column="72" lean-forward="false" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="85" column="73" lean-forward="false" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="57" column="97" lean-forward="false" selection-start-line="57" selection-start-column="97" selection-end-line="57" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="271" column="0" lean-forward="false" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="112" column="11" lean-forward="false" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="90" column="44" lean-forward="false" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="220" column="2" lean-forward="false" selection-start-line="220" selection-start-column="2" selection-end-line="220" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/PermissionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="48" column="48" lean-forward="false" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -896,31 +1030,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-          <folding>
-            <element signature="e#2018#2019#0" expanded="true" />
-            <element signature="e#2047#2048#0" expanded="true" />
-            <element signature="e#2109#2110#0" expanded="true" />
-            <element signature="e#2143#2144#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-234">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/resources/spring-shiro.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tms-service-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="-154">
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding />
         </state>
       </provider>

@@ -53,4 +53,12 @@ public interface AccountService {
      * @return void
      */
     void updateAccount(Account account, Integer[] rolesIds);
+
+    /**
+     * 根据用户id删除用户
+     * @date 2018/4/17
+     * @param [id]
+     * @return void
+     */
+    void delAccountById(Integer id);
 }
