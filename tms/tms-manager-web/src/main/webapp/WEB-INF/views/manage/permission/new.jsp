@@ -5,18 +5,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TMS - 系统管理 - 新增</title>
-    <%@include file="/include/css.jsp"%>
+    <title>TMS - 系统管理 - 新增权限</title>
+    <%@include file="../../include/css.jsp"%>
 </head>
 <body class="hold-transition skin-purple sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 
-    <%@include file="/include/navhead.jsp"%>
+    <%@include file="../../include/navhead.jsp"%>
 
     <!-- =============================================== -->
 
-    <jsp:include page="/include/sider.jsp">
+    <jsp:include page="../../include/sider.jsp">
         <jsp:param name="menu" value="home"/>
     </jsp:include>
 
@@ -79,7 +79,7 @@
 </div>
 <!-- ./wrapper -->
 
-<%@include file="/include/js.jsp"%>
+<%@include file="../../include/js.jsp"%>
 <script>
     $(function () {
         $("#saveBtn").click(function () {

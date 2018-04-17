@@ -1,6 +1,8 @@
 package com.kaishengit.tms.entity;
 
 import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
 
 /**
  * @author 
@@ -21,12 +23,15 @@ public class Roles implements Serializable {
     /**
      * 创建时间
      */
-    private String createTime;
+    private Date createTime;
 
     /**
      * 修改时间
      */
-    private String updateTime;
+    private Date updateTime;
+
+    //角色的权限列表
+    private List<Permission> permissionList;
 
     private static final long serialVersionUID = 1L;
 
@@ -54,20 +59,28 @@ public class Roles implements Serializable {
         this.rolesCode = rolesCode;
     }
 
-    public String getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
-    public String getUpdateTime() {
+    public Date getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(String updateTime) {
+    public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public List<Permission> getPermissionList() {
+        return permissionList;
+    }
+
+    public void setPermissionList(List<Permission> permissionList) {
+        this.permissionList = permissionList;
     }
 
     @Override

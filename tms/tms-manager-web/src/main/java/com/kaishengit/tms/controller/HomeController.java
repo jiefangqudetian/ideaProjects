@@ -76,5 +76,10 @@ public class HomeController {
         return "home";
     }
 
+    @GetMapping("/401")
+    public String unauthorizedUrl(){
+        return "error/401";
+    }
+
 
 }

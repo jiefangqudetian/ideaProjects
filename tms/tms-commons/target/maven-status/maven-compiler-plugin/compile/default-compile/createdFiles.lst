@@ -18,6 +18,7 @@ com\kaishengit\tms\entity\RolesPermissionExample$GeneratedCriteria.class
 com\kaishengit\tms\entity\AccountRolesExample$GeneratedCriteria.class
 com\kaishengit\tms\entity\AccountLoginLogExample$Criteria.class
 com\kaishengit\tms\exception\ServiceException.class
+com\kaishengit\tms\dto\ResponseBean.class
 com\kaishengit\tms\entity\PermissionExample$GeneratedCriteria.class
 com\kaishengit\tms\entity\AccountExample$Criteria.class
 com\kaishengit\tms\entity\AccountExample.class

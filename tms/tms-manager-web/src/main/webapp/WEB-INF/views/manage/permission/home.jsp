@@ -60,8 +60,8 @@
                                         <td>${permission.permissionCode}</td>
                                         <td>${permission.permissionType}</td>
                                         <td>
-                                            <a href="">修改</a>
-                                            <a href="">删除</a>
+                                            <a class="btn btn-primary btn-xs" href="" title="编辑"><i class="fa fa-pencil"></i></a>
+                                            <a class="btn btn-danger btn-xs delLink" rel="${permission.id}" href="javascript:;" title="删除"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
                                 </c:when>
@@ -71,8 +71,8 @@
                                         <td>${permission.permissionCode}</td>
                                         <td>${permission.permissionType}</td>
                                         <td>
-                                            <a href="">修改</a>
-                                            <a href="">删除</a>
+                                            <a class="btn btn-primary btn-xs" href="" title="编辑"><i class="fa fa-pencil"></i></a>
+                                            <a class="btn btn-danger btn-xs delLink" rel="${permission.id}" href="javascript:;" title="删除"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
                                 </c:otherwise>
@@ -96,7 +96,24 @@
 <script>
     $(function () {
         $('.tree').treegrid();
+        $(".delLink").click(function () {
+           var id = $(this).attr("rel");
+           layer.confirm("确定要删除吗？",function (index) {
+               layer.close(index);
+               $.get("/manage/permission"+id+"del").done(function (result) {
+                   if(result.status=='success'){
+                       history.go(0);
+                   }else{
+                       layer.msg(result.message);
+                   }
+               }).error(function () {
+                   layer.msg("服务器忙");
+               });
+           })
+        });
     });
+
+
 </script>
 </body>
 </html>

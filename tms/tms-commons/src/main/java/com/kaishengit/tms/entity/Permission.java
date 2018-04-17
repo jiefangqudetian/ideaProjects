@@ -8,8 +8,8 @@ import java.util.Date;
  */
 public class Permission implements Serializable {
 
-    public static final String  MENU_TYPE = "菜单";
-    public static final String  BUTTON_TYPE = "按钮";
+    public static final String MENU_TYPE = "菜单";
+    public static final String BUTTON_TYPE = "按钮";
 
     private Integer id;
 
@@ -42,6 +42,11 @@ public class Permission implements Serializable {
      * 修改时间
      */
     private Date updateTime;
+
+    /**
+     * 资源路径
+     */
+    private String url;
 
     private static final long serialVersionUID = 1L;
 
@@ -101,6 +106,14 @@ public class Permission implements Serializable {
         this.updateTime = updateTime;
     }
 
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -119,7 +132,8 @@ public class Permission implements Serializable {
             && (this.getPermissionType() == null ? other.getPermissionType() == null : this.getPermissionType().equals(other.getPermissionType()))
             && (this.getParentId() == null ? other.getParentId() == null : this.getParentId().equals(other.getParentId()))
             && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
-            && (this.getUpdateTime() == null ? other.getUpdateTime() == null : this.getUpdateTime().equals(other.getUpdateTime()));
+            && (this.getUpdateTime() == null ? other.getUpdateTime() == null : this.getUpdateTime().equals(other.getUpdateTime()))
+            && (this.getUrl() == null ? other.getUrl() == null : this.getUrl().equals(other.getUrl()));
     }
 
     @Override
@@ -133,6 +147,7 @@ public class Permission implements Serializable {
         result = prime * result + ((getParentId() == null) ? 0 : getParentId().hashCode());
         result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
         result = prime * result + ((getUpdateTime() == null) ? 0 : getUpdateTime().hashCode());
+        result = prime * result + ((getUrl() == null) ? 0 : getUrl().hashCode());
         return result;
     }
 
@@ -149,6 +164,7 @@ public class Permission implements Serializable {
         sb.append(", parentId=").append(parentId);
         sb.append(", createTime=").append(createTime);
         sb.append(", updateTime=").append(updateTime);
+        sb.append(", url=").append(url);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

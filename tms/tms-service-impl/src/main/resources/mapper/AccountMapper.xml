@@ -3,7 +3,7 @@
 <mapper namespace="com.kaishengit.tms.mapper.AccountMapper">
   <resultMap id="BaseResultMap" type="com.kaishengit.tms.entity.Account">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="accoun_name" jdbcType="VARCHAR" property="accounName" />
+    <result column="account_name" jdbcType="VARCHAR" property="accountName" />
     <result column="account_mobile" jdbcType="VARCHAR" property="accountMobile" />
     <result column="account_password" jdbcType="VARCHAR" property="accountPassword" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
@@ -69,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, accoun_name, account_mobile, account_password, create_time, update_time, account_state
+    id, account_name, account_mobile, account_password, create_time, update_time, account_state
   </sql>
   <select id="selectByExample" parameterType="com.kaishengit.tms.entity.AccountExample" resultMap="BaseResultMap">
     select
@@ -101,22 +101,22 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.kaishengit.tms.entity.Account">
-    insert into account (id, accoun_name, account_mobile, 
+  <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.kaishengit.tms.entity.Account">
+    insert into account (id, account_name, account_mobile, 
       account_password, create_time, update_time, 
       account_state)
-    values (#{id,jdbcType=INTEGER}, #{accounName,jdbcType=VARCHAR}, #{accountMobile,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=INTEGER}, #{accountName,jdbcType=VARCHAR}, #{accountMobile,jdbcType=VARCHAR}, 
       #{accountPassword,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, 
       #{accountState,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.kaishengit.tms.entity.Account">
+  <insert id="insertSelective" useGeneratedKeys="true" keyProperty="id" parameterType="com.kaishengit.tms.entity.Account">
     insert into account
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
       </if>
-      <if test="accounName != null">
-        accoun_name,
+      <if test="accountName != null">
+        account_name,
       </if>
       <if test="accountMobile != null">
         account_mobile,
@@ -138,8 +138,8 @@
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="accounName != null">
-        #{accounName,jdbcType=VARCHAR},
+      <if test="accountName != null">
+        #{accountName,jdbcType=VARCHAR},
       </if>
       <if test="accountMobile != null">
         #{accountMobile,jdbcType=VARCHAR},
@@ -164,14 +164,65 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+  
+  <select id="findAllWithRolesByQueryParam" resultMap="accountWithRolesMap">
+    SELECT
+    account.*, roles.id AS rolesId,
+    roles.roles_code,
+    roles.roles_name,
+    roles.create_time AS rolesCreateTime,
+    roles.update_time AS rolesUpdateTime
+    FROM
+    account
+    LEFT JOIN account_roles ON account.id = account_roles.account_id
+    LEFT JOIN roles ON roles.id = account_roles.roles_id
+    <choose>
+      <when test="rolesId != null and rolesId != 0">
+        inner JOIN (
+        SELECT
+        id
+        FROM
+        account
+        INNER JOIN account_roles ON account_roles.account_id = account.id
+        <where>
+          account_roles.roles_id = #{rolesId}
+          <if test="nameMobile != null and nameMobile != ''">
+            and( (account.account_name like concat('%',#{nameMobile},'%'))
+            or
+            (account.account_mobile like concat('%',#{nameMobile},'%')))
+          </if>
+        </where>
+        ) AS temp ON account.id = temp.id
+      </when>
+      <otherwise>
+        <where>
+          <if test="nameMobile != null and nameMobile != ''">
+            (account.account_name like concat('%',#{nameMobile},'%'))
+            or
+            (account.account_mobile like concat('%',#{nameMobile},'%'))
+          </if>
+        </where>
+      </otherwise>
+    </choose>
+    order by account.id desc
+  </select>
+  <resultMap id="accountWithRolesMap" type="Account" extends="BaseResultMap">
+      <collection property="rolesList" ofType="Roles">
+          <id property="id" column="rolesId"/>
+          <result property="updateTime" column="rolesUpdateTime"/>
+          <result property="createTime" column="rolesCreateTime"/>
+          <result property="rolesCode" column="roles_code"/>
+          <result property="rolesName" column="roles_name"/>
+      </collection>
+  </resultMap>
   <update id="updateByExampleSelective" parameterType="map">
     update account
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.accounName != null">
-        accoun_name = #{record.accounName,jdbcType=VARCHAR},
+      <if test="record.accountName != null">
+        account_name = #{record.accountName,jdbcType=VARCHAR},
       </if>
       <if test="record.accountMobile != null">
         account_mobile = #{record.accountMobile,jdbcType=VARCHAR},
@@ -196,7 +247,7 @@
   <update id="updateByExample" parameterType="map">
     update account
     set id = #{record.id,jdbcType=INTEGER},
-      accoun_name = #{record.accounName,jdbcType=VARCHAR},
+      account_name = #{record.accountName,jdbcType=VARCHAR},
       account_mobile = #{record.accountMobile,jdbcType=VARCHAR},
       account_password = #{record.accountPassword,jdbcType=VARCHAR},
       create_time = #{record.createTime,jdbcType=TIMESTAMP},
@@ -209,8 +260,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.kaishengit.tms.entity.Account">
     update account
     <set>
-      <if test="accounName != null">
-        accoun_name = #{accounName,jdbcType=VARCHAR},
+      <if test="accountName != null">
+        account_name = #{accountName,jdbcType=VARCHAR},
       </if>
       <if test="accountMobile != null">
         account_mobile = #{accountMobile,jdbcType=VARCHAR},
@@ -232,7 +283,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.kaishengit.tms.entity.Account">
     update account
-    set accoun_name = #{accounName,jdbcType=VARCHAR},
+    set account_name = #{accountName,jdbcType=VARCHAR},
       account_mobile = #{accountMobile,jdbcType=VARCHAR},
       account_password = #{accountPassword,jdbcType=VARCHAR},
       create_time = #{createTime,jdbcType=TIMESTAMP},

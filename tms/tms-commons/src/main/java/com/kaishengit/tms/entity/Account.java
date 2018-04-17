@@ -2,21 +2,17 @@ package com.kaishengit.tms.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-
+import java.util.List;
 
 /**
- *系统登录账号实体类
- * @author drm
- * @date 2018/4/12
+ * @author 
  */
 public class Account implements Serializable {
-
-    public static final String STATE_NORMAL = "正常";
+	
+	public static final String STATE_NORMAL = "正常";
     public static final String STATE_DISABLE = "禁用";
-    public static final String STATE_LOCKED = "正锁定";
-
-
-
+    public static final String STATE_LOCKED = "锁定";
+	
     /**
      * 主键
      */
@@ -25,7 +21,7 @@ public class Account implements Serializable {
     /**
      * 用户名
      */
-    private String accounName;
+    private String accountName;
 
     private String accountMobile;
 
@@ -48,6 +44,11 @@ public class Account implements Serializable {
      * 账户状态  正常|锁定|禁用
      */
     private String accountState;
+	
+	/**
+     * 账户的角色列表
+     */
+    private List<Roles> rolesList;
 
     private static final long serialVersionUID = 1L;
 
@@ -59,12 +60,12 @@ public class Account implements Serializable {
         this.id = id;
     }
 
-    public String getAccounName() {
-        return accounName;
+    public String getAccountName() {
+        return accountName;
     }
 
-    public void setAccounName(String accounName) {
-        this.accounName = accounName;
+    public void setAccountName(String accountName) {
+        this.accountName = accountName;
     }
 
     public String getAccountMobile() {
@@ -107,6 +108,14 @@ public class Account implements Serializable {
         this.accountState = accountState;
     }
 
+    public void setRolesList(List<Roles> rolesList) {
+        this.rolesList = rolesList;
+    }
+
+    public List<Roles> getRolesList() {
+        return rolesList;
+    }
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -120,7 +129,7 @@ public class Account implements Serializable {
         }
         Account other = (Account) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getAccounName() == null ? other.getAccounName() == null : this.getAccounName().equals(other.getAccounName()))
+            && (this.getAccountName() == null ? other.getAccountName() == null : this.getAccountName().equals(other.getAccountName()))
             && (this.getAccountMobile() == null ? other.getAccountMobile() == null : this.getAccountMobile().equals(other.getAccountMobile()))
             && (this.getAccountPassword() == null ? other.getAccountPassword() == null : this.getAccountPassword().equals(other.getAccountPassword()))
             && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
@@ -133,7 +142,7 @@ public class Account implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getAccounName() == null) ? 0 : getAccounName().hashCode());
+        result = prime * result + ((getAccountName() == null) ? 0 : getAccountName().hashCode());
         result = prime * result + ((getAccountMobile() == null) ? 0 : getAccountMobile().hashCode());
         result = prime * result + ((getAccountPassword() == null) ? 0 : getAccountPassword().hashCode());
         result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
@@ -149,7 +158,7 @@ public class Account implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", accounName=").append(accounName);
+        sb.append(", accountName=").append(accountName);
         sb.append(", accountMobile=").append(accountMobile);
         sb.append(", accountPassword=").append(accountPassword);
         sb.append(", createTime=").append(createTime);
