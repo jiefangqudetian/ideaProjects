@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,9 +52,13 @@
             <div class="box">
                 <div class="box-header">
                     <h3 class="box-title">账号列表</h3>
-                    <div class="box-tools">
-                        <a href="/manage/account/new" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>新增账号</a>
-                    </div>
+                    <shiro:hasPermission name="account:add">
+                        <div class="box-tools">
+                            <a href="/manage/account/new" class="btn btn-success btn-sm">
+                                <i class="fa fa-plus"></i>新增账号
+                            </a>
+                        </div>
+                    </shiro:hasPermission>
                 </div>
                 <div class="box-body">
                     <table class="table">

@@ -208,5 +208,35 @@ public class AccountServiceImpl implements AccountService {
 
     }
 
+    /**
+     * 保存账号登录记录
+     *
+     * @param accountLoginLog
+     * @return void
+     * @date 2018/4/17
+     */
+    @Override
+    public void saveAccountLoginLog(AccountLoginLog accountLoginLog) {
+        accountLoginLogMapper.insertSelective(accountLoginLog);
+    }
+
+    /**
+     * 根据手机号查找账户
+     *
+     * @param userMobile
+     * @return com.kaishengit.tms.entity.Account
+     * @date 2018/4/17
+     */
+    @Override
+    public Account findAccountByMobile(String userMobile) {
+        AccountExample accountExample = new AccountExample();
+        accountExample.createCriteria().andAccountMobileEqualTo(userMobile);
+        List<Account> accountList = accountMapper.selectByExample(accountExample);
+        if (accountList!=null && !accountList.isEmpty()){
+            return accountList.get(0);
+        }
+        return null;
+    }
+
 
 }

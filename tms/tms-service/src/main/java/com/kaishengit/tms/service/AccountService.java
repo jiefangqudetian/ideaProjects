@@ -1,6 +1,7 @@
 package com.kaishengit.tms.service;
 
 import com.kaishengit.tms.entity.Account;
+import com.kaishengit.tms.entity.AccountLoginLog;
 import com.kaishengit.tms.exception.ServiceException;
 
 import java.util.List;
@@ -61,4 +62,20 @@ public interface AccountService {
      * @return void
      */
     void delAccountById(Integer id);
+
+    /**
+     * 保存账号登录记录
+     * @date 2018/4/17
+     * @param accountLoginLog
+     * @return void
+     */
+    void saveAccountLoginLog(AccountLoginLog accountLoginLog);
+
+    /**
+     * 根据手机号查找账户
+     * @date 2018/4/17
+     * @param userMobile
+     * @return com.kaishengit.tms.entity.Account
+     */
+    Account findAccountByMobile(String userMobile);
 }
