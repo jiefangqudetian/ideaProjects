@@ -1,6 +1,0 @@
-0:0:0:0:0:0:0:1 - - [11/Apr/2018:21:36:22 +0800] "GET /product?productName=&place=&minPrice=&maxPrice=&typeId=&p=3 HTTP/1.1" 200 12374 http-bio-80-exec-1 1227
-0:0:0:0:0:0:0:1 - - [11/Apr/2018:21:36:22 +0800] "GET /static/js/bootstrap.js HTTP/1.1" 200 69707 http-bio-80-exec-3 11
-0:0:0:0:0:0:0:1 - - [11/Apr/2018:21:36:22 +0800] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200 http-bio-80-exec-5 19
-0:0:0:0:0:0:0:1 - - [11/Apr/2018:21:36:22 +0800] "GET /static/js/jquery.min.js HTTP/1.1" 200 97162 http-bio-80-exec-2 12
-0:0:0:0:0:0:0:1 - - [11/Apr/2018:21:36:22 +0800] "GET /static/js/jquery.twbsPagination.min.js HTTP/1.1" 200 5277 http-bio-80-exec-4 8
-0:0:0:0:0:0:0:1 - - [11/Apr/2018:21:36:22 +0800] "GET /favicon.ico HTTP/1.1" 200 1150 http-bio-80-exec-7 50
