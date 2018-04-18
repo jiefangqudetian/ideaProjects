@@ -33,19 +33,23 @@ public class HomeController {
     /**  
      *系统登录页面
      * @date 2018/4/13
-     * @param 
+     * @param
      * @return java.lang.String  
      */
     @GetMapping("/")
     public String index(){
 
         Subject subject = SecurityUtils.getSubject();
+        System.out.println("subject.isAuthenticated()"+subject.isAuthenticated());
+        System.out.println("subject.isRemembered()"+subject.isRemembered());
 
+        //判断当前是否有已经认证的账号，如果有，则退出该账号
         if (subject.isAuthenticated()){
             subject.logout();
         }
 
         if (subject.isRemembered()){
+            //如果当前为被记住（通过rememberMe认证），则直接跳转到登录成功页面 home
             return "redirect:/home";
         }
 
@@ -133,6 +137,15 @@ public class HomeController {
     @GetMapping("/401")
     public String unauthorizedUrl(){
         return "error/401";
+    }
+
+    @GetMapping("/logout")
+    public String logout(RedirectAttributes redirectAttributes){
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+
+        redirectAttributes.addFlashAttribute("message","你已安全退出系统");
+        return "redirect:/";
     }
 
 

@@ -47,6 +47,7 @@
                         <tr>
                             <th>权限名称</th>
                             <th>权限代号</th>
+                            <th>资源url</th>
                             <th>类型</th>
                             <th>#</th>
                         </tr>
@@ -58,6 +59,7 @@
                                     <tr class="treegrid-${permission.id} treegrid-expanded">
                                         <td>${permission.permissionName}</td>
                                         <td>${permission.permissionCode}</td>
+                                        <td>${permission.url}</td>
                                         <td>${permission.permissionType}</td>
                                         <td>
                                             <a class="btn btn-primary btn-xs" href="/manage/permission/${permission.id}/edit" title="编辑"><i class="fa fa-pencil"></i></a>
@@ -69,6 +71,7 @@
                                     <tr class="treegrid-${permission.id} treegrid-expanded treegrid-parent-${permission.parentId}">
                                         <td>${permission.permissionName}</td>
                                         <td>${permission.permissionCode}</td>
+                                        <td>${permission.url}</td>
                                         <td>${permission.permissionType}</td>
                                         <td>
                                             <a class="btn btn-primary btn-xs" href="/manage/permission/${permission.id}/edit" title="编辑"><i class="fa fa-pencil"></i></a>
@@ -93,6 +96,7 @@
 <%@include file="../../include/js.jsp"%>
 <script src="/static/plugins/treegrid/js/jquery.treegrid.min.js"></script>
 <script src="/static/plugins/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+<script src="/static/plugins/layer/layer.js"></script>
 <script>
     $(function () {
         $('.tree').treegrid();
@@ -100,7 +104,7 @@
            var id = $(this).attr("rel");
            layer.confirm("确定要删除吗？",function (index) {
                layer.close(index);
-               $.get("/manage/permission"+id+"del").done(function (result) {
+               $.get("/manage/permission/"+id+"/del").done(function (result) {
                    if(result.status=='success'){
                        history.go(0);
                    }else{

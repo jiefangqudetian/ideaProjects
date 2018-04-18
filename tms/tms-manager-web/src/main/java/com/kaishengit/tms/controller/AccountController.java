@@ -55,7 +55,6 @@ public class AccountController {
      * @return java.lang.String
      */
     @GetMapping("/new")
-    @RequiresPermissions("account:add")
     public String newAccount(Model model){
         List<Roles> rolesList = rolePermissionService.findAllRoles();
 
@@ -64,7 +63,6 @@ public class AccountController {
     }
 
     @PostMapping("/new")
-    @RequiresPermissions("account:add")
     public String newAccount(Account account,Integer[] rolesIds){
 
         accountService.saveAccount(account,rolesIds);

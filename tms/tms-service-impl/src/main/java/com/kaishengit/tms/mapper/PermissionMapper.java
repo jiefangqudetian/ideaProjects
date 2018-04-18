@@ -27,4 +27,12 @@ public interface PermissionMapper {
     int updateByPrimaryKeySelective(Permission record);
 
     int updateByPrimaryKey(Permission record);
+
+    /**
+     * 根据角色id查找角色拥有的权限
+     * @date 2018/4/18
+     * @param [id]
+     * @return java.util.List<com.kaishengit.tms.entity.Permission>
+     */
+    List<Permission> findPermssionsByRolesId(Integer id);
 }

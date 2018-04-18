@@ -116,4 +116,20 @@ public interface RolePermissionService {
      * @return void
      */
     void updatePermission(Permission permission);
+
+    /**
+     * 根据用户id查找用户拥有的权限，权限可能重复
+     * @date 2018/4/18
+     * @param [id]
+     * @return java.util.List<com.kaishengit.tms.entity.Permission>
+     */
+    List<Permission> findPermissionsByAccountId(Integer id);
+
+    /**
+     * 根据角色id查找角色拥有的权限
+     * @date 2018/4/18
+     * @param [id]
+     * @return java.util.List<com.kaishengit.tms.entity.Permission>
+     */
+    List<Permission> findPermissionsByRolesId(Integer id);
 }

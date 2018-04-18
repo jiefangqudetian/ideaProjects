@@ -8,6 +8,7 @@ import com.kaishengit.tms.mapper.AccountRolesMapper;
 import com.kaishengit.tms.mapper.PermissionMapper;
 import com.kaishengit.tms.mapper.RolesMapper;
 import com.kaishengit.tms.mapper.RolesPermissionMapper;
+import com.kaishengit.tms.service.AccountService;
 import com.kaishengit.tms.service.RolePermissionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +38,8 @@ public class RolePermissionServiceImpl implements RolePermissionService {
     private RolesPermissionMapper rolesPermissionMapper;
     @Autowired
     private AccountRolesMapper accountRolesMapper;
+    @Autowired
+    private AccountService accountService;
 
     /**
      * 添加权限
@@ -271,6 +274,33 @@ public class RolePermissionServiceImpl implements RolePermissionService {
     public void updatePermission(Permission permission) {
 
         permissionMapper.updateByPrimaryKeySelective(permission);
+    }
+
+    /**
+     * 根据用户id查找用户拥有的权限，权限可能重复
+     *
+     * @param id
+     * @return java.util.List<com.kaishengit.tms.entity.Permission>
+     * @date 2018/4/18
+     */
+    @Override
+    public List<Permission> findPermissionsByAccountId(Integer id) {
+
+        //1.根据AccountId查找用户所拥有的角色集合
+        List<Roles> rolesList = findRolesByAccountId(id);
+        //2.根据角色集合查找用户所拥有的权限集合
+        List<Permission> permissionList = new ArrayList<>();
+        for (Roles roles:rolesList){
+            List<Permission> list = findPermissionsByRolesId(roles.getId());
+            permissionList.addAll(list);
+        }
+
+        return permissionList;
+    }
+
+    @Override
+    public List<Permission> findPermissionsByRolesId(Integer id) {
+        return permissionMapper.findPermssionsByRolesId(id);
     }
 
 

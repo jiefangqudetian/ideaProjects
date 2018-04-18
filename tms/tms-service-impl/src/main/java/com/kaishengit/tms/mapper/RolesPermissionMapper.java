@@ -1,5 +1,6 @@
 package com.kaishengit.tms.mapper;
 
+import com.kaishengit.tms.entity.Permission;
 import com.kaishengit.tms.entity.RolesPermissionExample;
 import com.kaishengit.tms.entity.RolesPermissionKey;
 import java.util.List;
@@ -21,4 +22,5 @@ public interface RolesPermissionMapper {
     int updateByExampleSelective(@Param("record") RolesPermissionKey record, @Param("example") RolesPermissionExample example);
 
     int updateByExample(@Param("record") RolesPermissionKey record, @Param("example") RolesPermissionExample example);
+
 }
