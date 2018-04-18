@@ -21,7 +21,7 @@ public interface AccountService {
      * @return 登录成功返回com.kaishengit.tms.entity.Account对象，登录失败返回null
      * @throws ServiceException 如果登录失败，则通过异常抛出具体的错误原因
      */ 
-    Account login(String accountMobile,String password,String requestIp)throws ServiceException;
+    //Account login(String accountMobile,String password,String requestIp)throws ServiceException;
 
     /**
      * 根据url传来的参数查询所有账号并加载对应的角色列表

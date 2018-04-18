@@ -8,6 +8,7 @@ import com.kaishengit.tms.entity.Roles;
 import com.kaishengit.tms.exception.ServiceException;
 import com.kaishengit.tms.service.AccountService;
 import com.kaishengit.tms.service.RolePermissionService;
+import com.kaishengit.tms.shiro.CustomerFilterChainDefinition;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,7 +32,15 @@ public class AccountController {
     private AccountService accountService;
     @Autowired
     private RolePermissionService rolePermissionService;
+    @Autowired
+    private CustomerFilterChainDefinition customerFilterChainDefinition;
 
+    /**
+     * 查看角色列表
+     * @date 2018/4/18
+     * @param model, rolesId, nameMobile
+     * @return java.lang.String
+     */
     @GetMapping
     public String home(Model model,
                        @RequestParam(required = false)Integer rolesId,
@@ -45,6 +54,8 @@ public class AccountController {
         model.addAttribute("rolesList",rolePermissionService.findAllRoles());
 
         List<Account> accountList = accountService.findAllAccountWithRolesByQueryParam(requestParam);
+        //System.out.println(accountList.isEmpty());
+        //System.out.println(accountList.get(10));
         return "manage/account/home";
     }
 
@@ -63,16 +74,23 @@ public class AccountController {
     }
 
     @PostMapping("/new")
-    public String newAccount(Account account,Integer[] rolesIds){
+    public String newAccount(Account account,Integer[] rolesIds,RedirectAttributes redirectAttributes){
 
+        /*System.out.println("--------------------------------------");
+        System.out.println(account.getAccountName().isEmpty());
+        System.out.println(account.getAccountName().hashCode());*/
         accountService.saveAccount(account,rolesIds);
+        //刷新Shiro权限
+        customerFilterChainDefinition.updateUrlPermission();
+        redirectAttributes.addFlashAttribute("message","新增账号成功");
         return "redirect:/manage/account";
     }
 
     @GetMapping("/{id:\\d+}/edit")
     public String edit(@PathVariable Integer id,Model model){
-        System.out.println(123);
+        //System.out.println(123);
         Account account = accountService.findById(id);
+        //System.out.println(account.getId());
         if (account == null){
             throw new NotFoundException();
         }
@@ -92,6 +110,8 @@ public class AccountController {
     @PostMapping("/{id:\\d+}/edit")
     public String edit(Account account, Integer[] rolesIds, RedirectAttributes redirectAttributes){
         accountService.updateAccount(account,rolesIds);
+        //刷新Shiro权限
+        customerFilterChainDefinition.updateUrlPermission();
         redirectAttributes.addFlashAttribute("message","修改账号成功");
 
         return "redirect:/manage/account";
@@ -102,6 +122,8 @@ public class AccountController {
 
         try{
             accountService.delAccountById(id);
+            //刷新Shiro权限
+            customerFilterChainDefinition.updateUrlPermission();
             return ResponseBean.success();
         }catch(ServiceException ex){
             return ResponseBean.error(ex.getMessage());

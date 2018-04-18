@@ -38,7 +38,7 @@ public class AccountServiceImpl implements AccountService {
      * @throws ServiceException 如果登录失败，则通过异常抛出具体的错误原因
      * @date 2018/4/12
      */
-    @Override
+    /*@Override
     public Account login(String accountMobile, String password, String requestIp) throws ServiceException {
         //根据手机号码查找对应的账号
         AccountExample accountExample = new AccountExample();
@@ -47,7 +47,7 @@ public class AccountServiceImpl implements AccountService {
         List<Account> accountList = accountMapper.selectByExample(accountExample);
         Account account = null;
 
-        if (accountList!=null && !accountList.isEmpty()){
+        if ( !accountList.isEmpty()){
             account = accountList.get(0);
             //匹配密码
             if (account.getAccountPassword().equals(DigestUtils.md5Hex(password))){
@@ -73,7 +73,7 @@ public class AccountServiceImpl implements AccountService {
         } else {
             throw new ServiceException("账号或密码错误");
         }
-    }
+    }*/
 
     /**
      * 根据url传来的参数查询所有账号并加载对应的角色列表
@@ -221,7 +221,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     /**
-     * 根据手机号查找账户
+     * 根据用户手机号查找账户
      *
      * @param userMobile
      * @return com.kaishengit.tms.entity.Account
@@ -232,7 +232,7 @@ public class AccountServiceImpl implements AccountService {
         AccountExample accountExample = new AccountExample();
         accountExample.createCriteria().andAccountMobileEqualTo(userMobile);
         List<Account> accountList = accountMapper.selectByExample(accountExample);
-        if (accountList!=null && !accountList.isEmpty()){
+        if (!accountList.isEmpty()){
             return accountList.get(0);
         }
         return null;

@@ -31,6 +31,9 @@
             <h1>
                 账号管理
             </h1>
+            <c:if test="${not empty message}">
+                <p class="login-box-msg text-danger">"Congratulations! ${message}"</p>
+            </c:if>
         </section>
 
         <!-- Main content -->

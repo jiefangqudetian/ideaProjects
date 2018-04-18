@@ -7,6 +7,7 @@ import com.kaishengit.tms.entity.Permission;
 import com.kaishengit.tms.entity.Roles;
 import com.kaishengit.tms.exception.ServiceException;
 import com.kaishengit.tms.service.RolePermissionService;
+import com.kaishengit.tms.shiro.CustomerFilterChainDefinition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,9 +29,11 @@ public class RolesController {
 
     @Autowired
     private RolePermissionService rolePermissionService;
+    @Autowired
+    private CustomerFilterChainDefinition customerFilterChainDefinition;
 
     /**
-     * 角色页首页
+     * 角色页首页，查看角色列表
      * @date 2018/4/15
      * @param []
      * @return java.lang.String
@@ -56,6 +59,8 @@ public class RolesController {
     @PostMapping("/new")
     public String newRoles(Roles roles,Integer[] permissionId,RedirectAttributes redirectAttributes){
         rolePermissionService.saveRoles(roles,permissionId);
+        //刷新Shiro权限
+        customerFilterChainDefinition.updateUrlPermission();
         redirectAttributes.addFlashAttribute("message","新增成功");
         return "redirect:/manage/roles";
     }
@@ -70,6 +75,8 @@ public class RolesController {
     public @ResponseBody ResponseBean deldeteRoles(@PathVariable Integer id){
         try{
             rolePermissionService.delRolesById(id);
+            //刷新Shiro权限
+            customerFilterChainDefinition.updateUrlPermission();
             return ResponseBean.success();
         }catch(ServiceException ex){
             return ResponseBean.error(ex.getMessage());
@@ -106,6 +113,8 @@ public class RolesController {
     public String updateRoles(Roles roles,Integer[] permissionId,
                               RedirectAttributes redirectAttributes){
         rolePermissionService.updateRoles(roles,permissionId);
+        //刷新Shiro权限
+        customerFilterChainDefinition.updateUrlPermission();
         redirectAttributes.addFlashAttribute("message","角色修改成功");
         return "redirect:/manage/roles";
     }

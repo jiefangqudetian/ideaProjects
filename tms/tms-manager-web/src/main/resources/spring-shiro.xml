@@ -54,7 +54,7 @@
         <!--访问没有权限的资源跳转的URL-->
         <property name="unauthorizedUrl" value="/401"/>
         <!--配置过滤器链定义-->
-        <property name="filterChainDefinitionMap" ref="filterChainDefinition"/>
+        <!--<property name="filterChainDefinitionMap" ref="filterChainDefinition"/>-->
         <!--<property name="filterChainDefinitions">
             <value>
                 /favicon.ico = anon
@@ -66,6 +66,7 @@
     </bean>
 
     <bean id="filterChainDefinition" class="com.kaishengit.tms.shiro.CustomerFilterChainDefinition">
+        <property name="shiroFilter" ref="shiroFilter"/>
         <property name="filterChainDefinition">
             <value>
                 /favicon.ico = anon

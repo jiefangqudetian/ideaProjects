@@ -100,13 +100,16 @@ public class RolePermissionServiceImpl implements RolePermissionService {
         roles.setCreateTime(new Date());
         rolesMapper.insertSelective(roles);
         //保存角色和权限的关系
-        for (Integer perId:permissionId){
-            RolesPermissionKey rolesPermissionKey = new RolesPermissionKey();
-            rolesPermissionKey.setPermissionId(perId);
-            rolesPermissionKey.setRolesId(roles.getId());
+        if (permissionId!=null){
+            for (Integer perId:permissionId){
+                RolesPermissionKey rolesPermissionKey = new RolesPermissionKey();
+                rolesPermissionKey.setPermissionId(perId);
+                rolesPermissionKey.setRolesId(roles.getId());
 
-            rolesPermissionMapper.insert(rolesPermissionKey);
+                rolesPermissionMapper.insert(rolesPermissionKey);
+            }
         }
+
         logger.info("保存角色{}",roles);
     }
 
@@ -226,12 +229,15 @@ public class RolePermissionServiceImpl implements RolePermissionService {
 
         rolesPermissionMapper.deleteByExample(rolesPermissionExample);
         //重建角色和权限的对应关系
-        for (Integer perId:permissionId){
-            RolesPermissionKey rolesPermissionKey = new RolesPermissionKey();
-            rolesPermissionKey.setRolesId(roles.getId());
-            rolesPermissionKey.setPermissionId(perId);
-            rolesPermissionMapper.insert(rolesPermissionKey);
+        if (permissionId!=null){
+            for (Integer perId:permissionId){
+                RolesPermissionKey rolesPermissionKey = new RolesPermissionKey();
+                rolesPermissionKey.setRolesId(roles.getId());
+                rolesPermissionKey.setPermissionId(perId);
+                rolesPermissionMapper.insert(rolesPermissionKey);
+            }
         }
+
 
         //修改角色对象
         rolesMapper.updateByPrimaryKeySelective(roles);

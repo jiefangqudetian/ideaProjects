@@ -19,6 +19,7 @@
     </parent>
 
     <dependencies>
+        <!--service实现类-->
         <dependency>
             <groupId>com.kaishengit</groupId>
             <artifactId>tms-service-impl</artifactId>

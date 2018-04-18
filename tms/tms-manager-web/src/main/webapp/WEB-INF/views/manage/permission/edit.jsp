@@ -51,7 +51,7 @@
                             <label>权限代号</label>
                             <input type="text" name="permissionCode" class="form-control" value="${permission.permissionCode}">
                         </div>
-                        <div class="form-group">
+                       <%-- <div class="form-group">
                             <label>权限类型</label>
                             <select name="permissionType" class="form-control">
                                 <option value="菜单" ${permission.permissionType=="菜单"?'selected':''}>菜单</option>
@@ -66,7 +66,7 @@
                                     <option value="${permission.id}">${permission.permissionName}</option>
                                 </c:forEach>
                             </select>
-                        </div>
+                        </div>--%>
                     </form>
                 </div>
                 <div class="box-footer">
