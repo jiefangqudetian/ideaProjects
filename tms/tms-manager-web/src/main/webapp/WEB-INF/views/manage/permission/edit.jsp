@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TMS - 系统管理 - 修改权限</title>
+    <title>TMS-综合管理系统 | 权限编辑</title>
     <%@include file="../../include/css.jsp"%>
 </head>
 <body class="hold-transition skin-purple sidebar-mini">

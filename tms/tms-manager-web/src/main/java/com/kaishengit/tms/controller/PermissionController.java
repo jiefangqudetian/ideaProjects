@@ -57,7 +57,7 @@ public class PermissionController {
     @PostMapping("/new")
     public String newPermission(Permission permission, RedirectAttributes redirectAttributes){
         rolePermissionService.savePermission(permission);
-        //刷新Shiro权限管理
+        //刷新Shiro权限管理,如果添加权限没有资源url或者资源url为空，抛空指针异常
         customerFilterChainDefinition.updateUrlPermission();
         redirectAttributes.addFlashAttribute("message","新增权限成功");
         return "redirect:/manage/permission";

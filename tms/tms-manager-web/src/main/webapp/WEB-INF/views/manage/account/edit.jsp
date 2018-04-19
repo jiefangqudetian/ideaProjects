@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TMS | 编辑账号</title>
+    <title>TMS-综合管理系统 | 账号编辑</title>
     <%@include file="../../include/css.jsp"%>
 </head>
 <body class="hold-transition skin-purple sidebar-mini">

@@ -12,6 +12,7 @@ import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.PostConstruct;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -78,10 +79,12 @@ public class CustomerFilterChainDefinition  {
         Ini.Section section = ini.get(Ini.DEFAULT_SECTION_NAME);
 
         for (Permission permission:permissionList){
+
             section.put(permission.getUrl(),"perms["+permission.getPermissionCode()+"]");
         }
 
         section.put("/**","user");
+
 
         //url和权限的关系设置到shiroFilter中
         DefaultFilterChainManager defaultFilterChainManager = getFilterChainManager();
