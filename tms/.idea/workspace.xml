@@ -2,67 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a4a90f7-a0bd-43dd-a85e-c02d36ae1fac" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/StoreAccount.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/StoreAccountExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/StoreLoginLog.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/StoreLoginLogExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/TicketStore.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-commons/src/main/java/com/kaishengit/tms/entity/TicketStoreExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/TicketStoreController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/home.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/Uploader.swf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.custom.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.custom.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.fis.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.flashonly.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.flashonly.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.html5only.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.html5only.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.noimage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.noimage.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.nolog.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.nolog.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.withoutimage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/static/plugins/uploader/webuploader.withoutimage.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/fileStore/QiniuStore.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/StoreAccountMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/StoreLoginLogMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/TicketStoreMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TickeStoreServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/StoreAccountMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/StoreLoginLogMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/mapper/TicketStoreMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/TicketService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-service/src/main/java/com/kaishengit/tms/service/TicketStoreService.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/tms_finance_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/tms_finance_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/tms_manager_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/tms_manager_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/home.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/include/sider.jsp" afterPath="$PROJECT_DIR$/tms-finance-web/src/main/webapp/WEB-INF/views/include/sider.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-finance-web/tms-finance-web.iml" afterPath="$PROJECT_DIR$/tms-finance-web/tms-finance-web.iml" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/shiro/CustomerFilterChainDefinition.java" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/shiro/CustomerFilterChainDefinition.java" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/home.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/new.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/new.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/edit.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/edit.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/new.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/new.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/tms-manager-web.iml" afterPath="$PROJECT_DIR$/tms-manager-web/tms-manager-web.iml" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/pom.xml" afterPath="$PROJECT_DIR$/tms-service-impl/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" afterPath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" />
+      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/tms-commons/target/" />
     <ignored path="$PROJECT_DIR$/tms-service/target/" />
@@ -118,8 +58,8 @@
       <file leaf-file-name="new.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2838">
-              <caret line="129" column="30" lean-forward="false" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
+            <state relative-caret-position="22">
+              <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -213,8 +153,8 @@
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/TicketServiceImpl.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/java/com/kaishengit/tms/controller/TicketStoreController.java" />
         <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp" />
-        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp" />
         <option value="$PROJECT_DIR$/tms-service-impl/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp" />
       </list>
     </option>
   </component>
@@ -243,7 +183,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="215" />
     <option name="y" value="17" />
     <option name="width" value="1346" />
@@ -708,15 +648,15 @@
       <workItem from="1523948386305" duration="14518000" />
       <workItem from="1524011694849" duration="31041000" />
       <workItem from="1524098052637" duration="8932000" />
-      <workItem from="1524145957276" duration="9681000" />
+      <workItem from="1524145957276" duration="10347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157636000" />
+    <option name="totallyTimeSpent" value="158302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1227,8 +1167,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2838">
-          <caret line="129" column="30" lean-forward="false" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
+        <state relative-caret-position="22">
+          <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
           <folding />
         </state>
       </provider>
