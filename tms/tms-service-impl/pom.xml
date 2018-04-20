@@ -110,6 +110,12 @@
             <artifactId>qiniu-java-sdk</artifactId>
             <version>7.2.8</version>
         </dependency>
+        <!--在根目录pom导不进-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TMS综合管理系统 | 新增售票点</title>
+    <title>TMS综合管理系统 | 编辑售票点</title>
     <%@include file="../include/css.jsp"%>
     <link rel="stylesheet" href="/static/plugins/uploader/webuploader.css">
     <style>
@@ -37,7 +37,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                新增售票点
+                编辑售票点
             </h1>
         </section>
 
@@ -46,32 +46,38 @@
             <div class="box">
                 <div class="box-body">
                     <form method="post" id="saveForm">
+                        <input type="hidden" name="id" value="${ticketStore.id}">
+                        <input type="hidden" name="storeAccountId" value="${ticketStore.storeAccountId}">
                         <input type="hidden" id="storeManagerAttachment" name="storeManagerAttachment">
                         <input type="hidden" id="storeAttachment" name="storeAttachment">
                         <div class="form-group">
                             <label>售票点名称</label>
-                            <input type="text" class="form-control" name="storeName">
+                            <input type="text" class="form-control" name="storeName" value="${ticketStore.storeName}">
                         </div>
                         <div class="form-group">
                             <label>售票点地址</label>
-                            <input type="text" class="form-control" name="storeAddress">
+                            <input type="text" class="form-control" name="storeAddress" value="${ticketStore.storeAddress}">
                         </div>
                         <div class="form-group">
                             <label>联系人</label>
-                            <input type="text" class="form-control" name="storeManager">
+                            <input type="text" class="form-control" name="storeManager" value="${ticketStore.storeManager}">
                         </div>
                         <div class="form-group">
                             <label>联系电话</label>
-                            <input type="text" class="form-control" name="storeTel">
+                            <input type="text" class="form-control" name="storeTel" value="${ticketStore.storeTel}">
                         </div>
-                        <div class="form-group">
+                        <div class="form-row">
                             <div class="col-md-6">
                                 <div id="picker">选择联系人身份证照片</div>
-                                <div class="photo" id="userPhoto"></div>
+                                <div class="photo" id="userPhoto">
+                                    <img src="http://p7f6tjc1h.bkt.clouddn.com/${ticketStore.storeManagerAttachment}-preview" alt="">
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div id="picker2">选择营业执照照片</div>
-                                <div class="photo" id="storePhoto"></div>
+                                <div class="photo" id="storePhoto">
+                                    <img src="http://p7f6tjc1h.bkt.clouddn.com/${ticketStore.storeAttachment}-preview" alt="">
+                                </div>
                             </div>
                         </div>
                     </form>
