@@ -1,4 +1,4 @@
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -38,7 +38,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                新增售票点
+                售票点详情
             </h1>
         </section>
 
@@ -49,11 +49,11 @@
                     <h3 class="box-title">售票点信息</h3>
                     <div class="box-tools">
                         <a href="/ticketstore/${ticketStore.id}/edit" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i>编辑</a>
-                        <a href="javascript:;" rel="${ticketStore.id}" class="btn btn-primary btn-sm"><i class="fa fa-trash">删除</i></a>
+                        <a href="javascript:;" rel="${ticketStore.id}" class="btn btn-primary btn-sm" id="delBtn"><i class="fa fa-trash">删除</i></a>
                     </div>
                 </div>
                 <div class="box-body">
-                    <table>
+                    <table class="table">
                         <tbody>
                             <tr>
                                 <td class="text-muted">售票点名称</td>
@@ -67,7 +67,7 @@
                                 <td class="text-muted">地址</td>
                                 <td>${ticketStore.storeAddress}</td>
                                 <td class="text-muted">创建时间</td>
-                                <td>${ticketStore.createTime}</td>
+                                <td><fmt:formatDate value="${ticketStore.createTime}"/></td>
                             </tr>
                         </tbody>
                     </table>
@@ -77,7 +77,7 @@
                 <div class="box-header">
                     <h3 class="box-title">关联账号</h3>
                     <div class="box-tools">
-                        <a href="javascript:;" rel="${storeAccount.id}" class=""><i class="fa fa-ban">禁用账号</i></a>
+                        <a href="javascript:;" rel="${storeAccount.id}" class="btn btn-danger sm" id="banBtn"><i class="fa fa-ban">禁用账号</i></a>
                     </div>
                 </div>
                 <div class="box-body">
@@ -126,6 +126,30 @@
     $(function () {
         $("#saveBtn").click(function () {
             $("#saveForm").submit();
+        });
+
+        $("#banBtn").click(function () {
+            var id = $(this).attr("rel");
+            layer.confirm("确定要禁用该账户吗？",function (index) {
+                layer.close(index);
+                $.get("/ticketstore/"+id+"/ban").done(function (result) {
+                    if(result.status == 'success'){
+                        window.history.go(0);
+                    } else if (result.status == error){
+                        layer.msg(result.message);
+                    }
+                }).error(function () {
+                    layer.msg("服务器忙");
+                });
+            });
+        });
+
+        //删除
+        $("#delBtn").click(function () {
+            var id = $(this).attr("rel");
+            layer.confirm("确定要删除该用户？",function (index) {
+                window.location.href = "/ticketstore/"+id+"/del";
+            });
         });
 
     })

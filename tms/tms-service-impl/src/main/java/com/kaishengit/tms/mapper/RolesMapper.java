@@ -28,6 +28,8 @@ public interface RolesMapper {
 
     int updateByPrimaryKey(Roles record);
 
+    /*-------------以下方法为自定义-------------------*/
+
     Roles findByIdWithPermission(Integer accountId);
 
     List<Roles> findAllWithPermission();

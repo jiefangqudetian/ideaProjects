@@ -29,6 +29,8 @@ public interface AccountMapper {
     int updateByPrimaryKeySelective(Account record);
 
     int updateByPrimaryKey(Account record);
+
+    /*-------------以下方法为自定义-------------------*/
 	
 	List<Account> findAllWithRolesByQueryParam(Map<String, Object> requestParam);
 }

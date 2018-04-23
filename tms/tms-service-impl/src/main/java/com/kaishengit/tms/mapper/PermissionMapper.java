@@ -28,6 +28,8 @@ public interface PermissionMapper {
 
     int updateByPrimaryKey(Permission record);
 
+    /*-------------以下方法为自定义-------------------*/
+
     /**
      * 根据角色id查找角色拥有的权限
      * @date 2018/4/18

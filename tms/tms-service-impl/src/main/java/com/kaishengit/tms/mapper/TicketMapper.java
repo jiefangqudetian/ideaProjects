@@ -27,4 +27,15 @@ public interface TicketMapper {
     int updateByPrimaryKeySelective(Ticket record);
 
     int updateByPrimaryKey(Ticket record);
+
+    /*-------------以下方法为自定义-------------------*/
+
+    /**
+     * 批量插入年票
+     * @date 2018/4/21
+     * @param [ticketList]
+     * @return void
+     */
+    void batchInsert(@Param("ticketList") List<Ticket> ticketList);
+
 }

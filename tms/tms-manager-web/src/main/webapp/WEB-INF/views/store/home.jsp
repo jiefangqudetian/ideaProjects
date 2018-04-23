@@ -38,13 +38,23 @@
 
         <!-- Main content -->
         <section class="content">
+            <div class="box">
+                <div class="box-body">
+                    <form method="get" class="form-inline">
+                        <input type="text" name="storeName" class="form-control" placeholder="售票点名称" value="${param.storeName}">
+                        <input type="text" name="storeManager" class="form-control" placeholder="联系人" value="${param.storeManager}">
+                        <input type="text" name="storeTel" class="form-control" placeholder="联系电话" value="${param.storeTel}">
+                        <button class="btn btn-default">搜索</button>
+                    </form>
+                </div>
+            </div>
 
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">售票点列表</h3>
+                    <h3 class="box-title">销售点管理</h3>
                     <%--<shiro:hasPermission name="account:add"></shiro:hasPermission>--%>
                         <div class="box-tools">
-                            <a href="/manage/account/new" class="btn btn-success btn-sm">
+                            <a href="/ticketstore/new" class="btn btn-success btn-sm">
                                 <i class="fa fa-plus"></i>新增售票点
                             </a>
                         </div>
@@ -54,38 +64,17 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>名称</th>
-                            <th>地址</th>
-                            <th>负责人</th>
+                            <th>销售点名称</th>
+                            <th>联系人</th>
                             <th>联系电话</th>
-                            <th>身份证</th>
-                            <th>营业执照</th>
-                            <th>#</th>
                         </tr>
                         </thead>
                         <tbody>
-                            <c:forEach items="${accountList}" var="account">
+                            <c:forEach items="${pageInfo.list}" var="store">
                                 <tr>
-                                    <td>${account.accountName}</td>
-                                    <td>${account.accountMobile}</td>
-                                    <td>
-                                        <c:forEach items="${account.rolesList}" var="roles">
-                                            ${roles.rolesName}
-                                        </c:forEach>
-                                    </td>
-                                    <td>${account.accountState}</td>
-                                    <td>
-                                        <a href="/manage/account/${account.id}/edit">预览</a>
-                                        <a class="delLink" rel="${account.id}" href="javascript:;">下载</a>
-                                    </td>
-                                    <td>
-                                        <a href="/manage/account/${account.id}/edit">预览</a>
-                                        <a class="delLink" rel="${account.id}" href="javascript:;">下载</a>
-                                    </td>
-                                    <td>
-                                        <a href="/manage/account/${account.id}/edit"><i class="fa fa-pencil"></i></a>
-                                        <a class="delLink" rel="${account.id}" href="javascript:;"><i class="fa fa-trash"></i></a>
-                                    </td>
+                                    <td><a href="/ticketstore/${store.id}/info">${store.storeName}</a></td>
+                                    <td>${store.storeManager}</td>
+                                    <td>${store.storeTel}</td>
                                 </tr>
                                 
                             </c:forEach>
@@ -107,6 +96,9 @@
 <script src="/static/plugins/layer/layer.js"></script>
 <script>
     $(function(){
+
+
+
         //删除
         $(".delLink").click(function () {
             var id = $(this).attr("rel");

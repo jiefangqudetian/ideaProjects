@@ -102,7 +102,7 @@ public class TicketStoreController {
         return  "store/edit";
     }
 
-    @PostMapping("/edit")
+    @PostMapping("/{id:\\d+}/edit")
     public String updateStore(TicketStore ticketStore,RedirectAttributes redirectAttributes){
 
 
@@ -116,8 +116,8 @@ public class TicketStoreController {
     public String updateStore(@PathVariable Integer id,RedirectAttributes redirectAttributes){
 
         ticketStoreService.delTicketStoreById(id);
-        redirectAttributes.addFlashAttribute("message","修改成功");
-        return  "redirect:/ticketStore";
+        redirectAttributes.addFlashAttribute("message","删除成功");
+        return  "redirect:/ticketstore";
     }
     /*
     *//**

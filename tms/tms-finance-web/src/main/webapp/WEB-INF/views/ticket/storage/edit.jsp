@@ -33,7 +33,7 @@
         <section class="content">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">新增入库</h3>
+                    <h3 class="box-title">修改入库</h3>
                     <div class="box-tools">
                         <a href="/ticket/storage" class="btn btn-sm btn-success">返回</a>
                     </div>
@@ -41,17 +41,19 @@
                 <div class="box-body">
                     <form method="post" id="saveForm">
                         <div class="form-group">
-                            <label>入库时间</label>
+                            <label>修改时间</label>
                             <input type="text" class="form-control" disabled value="${today}">
                         </div>
                         <div class="form-group">
                             <label>起始票号</label>
-                            <input type="text" class="form-control" name="beginTicketNum" id="beginNum">
+                            <input type="text" class="form-control" name="beginTicketNum" id="beginNum" value="${ticketInRecord.beginTicketNum}">
                         </div>
                         <div class="form-group">
                             <label>截止票号</label>
-                            <input type="text" class="form-control" name="endTicketNum" id="endNum">
+                            <input type="text" class="form-control" name="endTicketNum" id="endNum" value="${ticketInRecord.endTicketNum}">
                         </div>
+                        <%--隐藏域，存放id--%>
+                        <input type="hidden" name="id" value="${ticketInRecord.id}">
                     </form>
                 </div>
                 <div class="box-footer">

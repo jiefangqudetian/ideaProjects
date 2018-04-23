@@ -114,7 +114,7 @@
       #{beginTicketNum,jdbcType=VARCHAR}, #{endTicketNum,jdbcType=VARCHAR}, #{totalNum,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.kaishengit.tms.entity.TicketInRecord">
+  <insert id="insertSelective" parameterType="com.kaishengit.tms.entity.TicketInRecord" useGeneratedKeys="true" keyProperty="id">
     insert into ticket_in_record
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">

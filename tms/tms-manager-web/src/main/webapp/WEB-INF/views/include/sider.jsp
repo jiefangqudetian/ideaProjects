@@ -14,7 +14,7 @@
             <li class="${param.menu == 'manage_permission'?'active':''}"><a href="/manage/permission"><i class="fa fa-circle-o"></i> <span>权限管理</span></a></li>
             <li class="header">基本信息管理</li>
             <li class="${param.menu == '' ? 'active' : ''}"><a href="#"><i class="fa fa-circle-o"></i> <span>景区信息</span></a></li>
-            <li class="${param.menu == 'ticket_store' ? 'active' : ''}"><a href="/manage/store"><i class="fa fa-circle-o"></i> <span>售票点信息</span></a></li>
+            <li class="${param.menu == 'ticket_store' ? 'active' : ''}"><a href="/ticketstore"><i class="fa fa-circle-o"></i> <span>售票点信息</span></a></li>
             <li class="${param.menu == '' ? 'active' : ''}"><a href="#"><i class="fa fa-circle-o"></i> <span>特约消费点信息</span></a></li>
             <li class="${param.menu == '' ? 'active' : ''}"><a href="#"><i class="fa fa-circle-o"></i> <span>分类统计信息</span></a></li>
             <li class="header">综合办公</li>
