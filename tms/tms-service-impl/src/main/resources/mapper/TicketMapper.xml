@@ -109,6 +109,11 @@
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
+    <delete id="deleteByStartAndEndNum">
+        DELETE from ticket
+            where ticket_num &gt;= convert(#{param1},unsigned int)
+            and ticket_num &lt;= convert(#{param2},unsigned int)
+    </delete>
 
     <insert id="insert" parameterType="com.kaishengit.tms.entity.Ticket">
         INSERT INTO ticket (id, ticket_num, ticket_in_time,
@@ -215,6 +220,28 @@
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
+    </select>
+    <select id="countTicketByState" resultType="java.util.Map">
+        SELECT
+            count(*) as total,
+            count(case when ticket_state = '已入库' then 1 end) as in_num,
+            count(case when ticket_state = '已下发' then 1 end) as in_num,
+            count(case when ticket_state = '已销售' then 1 end) as in_num,
+            count(case when ticket_state = '已挂失' then 1 end) as in_num,
+            count(case when ticket_state = '已过期' then 1 end) as in_num
+        from
+            ticket
+    </select>
+    <select id="selectByStartAndEndNum" resultType="com.kaishengit.tms.entity.Ticket">
+        SELECT * FROM ticket
+        where ticket_num &gt;= convert(#{param1},unsigned int)
+        and ticket_num &lt;= convert(#{param2},unsigned int)
+              and ticket_state = #{param3};
+    </select>
+    <select id="selectOutByStartAndEndNum" resultType="com.kaishengit.tms.entity.Ticket">
+        SELECT * FROM ticket
+        where ticket_num &gt;= convert(#{param1},unsigned int)
+              and ticket_num &lt;= convert(#{param2},unsigned int)
     </select>
     <update id="updateByExampleSelective" parameterType="map">
         update ticket

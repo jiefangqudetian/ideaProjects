@@ -3,6 +3,8 @@ package com.kaishengit.tms.mapper;
 import com.kaishengit.tms.entity.Ticket;
 import com.kaishengit.tms.entity.TicketExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TicketMapper {
@@ -38,4 +40,29 @@ public interface TicketMapper {
      */
     void batchInsert(@Param("ticketList") List<Ticket> ticketList);
 
+    /**
+     * 根据年票状态统计年票数量
+     * @date 2018/4/23
+     * @param []
+     * @return java.util.Map<java.lang.String,java.lang.Object>
+     */
+    Map<String,Object> countTicketByState();
+
+    List<Ticket> selectByStartAndEndNum(String beginTicketNum, String endTicketNum, String ticketStateInStore);
+
+    /**
+     * 根据起止票号批量删除
+     * @date 2018/4/23
+     * @param [beginTicketNum, endTicketNum, ticketStateInStore]
+     * @return void
+     */
+    void deleteByStartAndEndNum(String beginTicketNum, String endTicketNum);
+
+    /**
+     * 根据起止票号查找
+     * @date 2018/4/23
+     * @param [beginTicketNum, endTicketNum]
+     * @return java.util.List<com.kaishengit.tms.entity.Ticket>
+     */
+    List<Ticket> selectOutByStartAndEndNum(String beginTicketNum, String endTicketNum);
 }

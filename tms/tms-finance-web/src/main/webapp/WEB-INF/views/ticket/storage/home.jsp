@@ -27,6 +27,10 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
+            <h1>年票入库</h1>
+        </section>
+        <!-- Main content -->
+        <section class="content">
             <div class="box">
                 <div class="box-header">
                     <h3 class="box-title">入库列表</h3>
@@ -35,6 +39,9 @@
                     </div>
                 </div>
                 <div class="box-body">
+                    <c:if test="${not empty message}">
+                        <div class="alert alert-info">${message}</div>
+                    </c:if>
                     <table class="table">
                         <thead>
                             <tr>
@@ -48,30 +55,32 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <c:forEach items="${ticketInRecordList}" var="ticketInRecord">
-                                <tr>
-                                    <th><fmt:formatDate value="${ticketInRecord.createTime}"/></th>
-                                    <th>${ticketInRecord.content}</th>
-                                    <th>${ticketInRecord.beginTicketNum}</th>
-                                    <th>${ticketInRecord.endTicketNum}</th>
-                                    <th>${ticketInRecord.totalNum}</th>
-                                    <th>${ticketInRecord.accountName}</th>
-                                    <th>
-                                        <a href="/ticket/storage/${ticketInRecord.id}/edit"><i class="fa fa-pencil"></i></a>
-                                        <a href="javascript:;" rel="${ticketInRecord.id}" class="delBtn"><i class="fa fa-trash"></i></a>
-                                    </th>
-                                </tr>
-                            </c:forEach>
+                        <c:if test="${empty pageInfo.list}">
+                            <tr>
+                                <td colspan="7">暂无记录</td>
+                            </tr>
+                        </c:if>
+                        <c:forEach items="${pageInfo.list}" var="record">
+                            <tr>
+                                <th><fmt:formatDate value="${record.createTime}"/></th>
+                                <th>${record.content}</th>
+                                <th>${record.beginTicketNum}</th>
+                                <th>${record.endTicketNum}</th>
+                                <th>${record.totalNum}</th>
+                                <th>${record.accountName}</th>
+                                <th>
+                                    <a href="/ticket/storage/${record.id}/edit"><i class="fa fa-pencil"></i></a>
+                                    <a href="javascript:;" rel="${record.id}" class="btn btn-sm del_link"><i class="fa fa-trash text-danger"></i></a>
+                                </th>
+                            </tr>
+                        </c:forEach>
                         </tbody>
                     </table>
+                    <c:if test="${pageInfo.pages > 1}">
+                        <ul id="pagination-demo" class="pagination pull-right"></ul>
+                    </c:if>
                 </div>
             </div>
-
-        </section>
-
-        <!-- Main content -->
-        <section class="content">
-
         </section>
         <!-- /.content -->
     </div>
@@ -83,19 +92,11 @@
 <script src="/static/plugins/layer/layer.js"></script>
 <script>
     $(function () {
-        $(".delBtn").click(function () {
+        $(".del_link").click(function () {
             var id = $(this).attr("rel");
-            layer.confirm("确定要删除么？",function (index) {
+            layer.confirm("确定要删除该入库记录么？",function (index) {
                 layer.close(index);
-                $.get("/ticket/storage/"+id+"/del").done(function(result){
-                    if(result.status == 'success'){
-                        window.history.go(0);
-                    } else if(result.status == 'error'){
-                        layer.msg(result.message);
-                    }
-                }).error(function () {
-                    layer.msg("服务器忙")
-                })
+                window.location.href = "/ticket/storage/"+id+"/del";
             })
         })
     });

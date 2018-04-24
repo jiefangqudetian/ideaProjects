@@ -169,4 +169,16 @@ public class TickeStoreServiceImpl implements TicketStoreService {
         storeAccountMapper.deleteByPrimaryKey(storeAccount.getId());
         ticketStoreMapper.deleteByPrimaryKey(id);
     }
+
+    /**
+     * 查找所有售票点
+     * @return java.util.List<com.kaishengit.tms.entity.TicketStore>
+     * @date 2018/4/23
+     */
+    @Override
+    public List<TicketStore> findAllTicketStore() {
+        TicketStoreExample ticketStoreExample = new TicketStoreExample();
+        ticketStoreExample.setOrderByClause("id desc");
+        return ticketStoreMapper.selectByExample(ticketStoreExample);
+    }
 }

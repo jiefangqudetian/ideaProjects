@@ -4,6 +4,7 @@ import com.github.pagehelper.PageInfo;
 import com.kaishengit.tms.entity.StoreAccount;
 import com.kaishengit.tms.entity.TicketStore;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -59,4 +60,12 @@ public interface TicketStoreService {
      * @return void
      */
     void delTicketStoreById(Integer id);
+
+    /**
+     * 查找所有售票点
+     * @date 2018/4/23
+     * @param []
+     * @return java.util.List<com.kaishengit.tms.entity.TicketStore>
+     */
+    List<TicketStore> findAllTicketStore();
 }

@@ -1,8 +1,11 @@
 package com.kaishengit.tms.service;
 
+import com.github.pagehelper.PageInfo;
 import com.kaishengit.tms.entity.TicketInRecord;
+import com.kaishengit.tms.entity.TicketOutRecord;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 年票业务类
@@ -43,4 +46,44 @@ public interface TicketService {
      * @return void
      */
     void updateTicketInRecord(TicketInRecord ticketInRecord);
+
+    /**
+     * 根据页码查询入库记录
+     * @date 2018/4/23
+     * @param [pageNo]
+     * @return com.github.pagehelper.PageInfo<com.kaishengit.tms.entity.TicketInRecord>
+     */
+    PageInfo<TicketInRecord> findTicketRecordByPageNo(Integer pageNo);
+
+    /**
+     * 根据年票状态统计年票数量
+     * @date 2018/4/23
+     * @param []
+     * @return java.util.Map<java.lang.String,java.lang.Object>
+     */
+    Map<String,Object> countTicketByState();
+
+    /**
+     * 根据页码查询下发记录
+     * @date 2018/4/23
+     * @param [pageNo]
+     * @return com.github.pagehelper.PageInfo<com.kaishengit.tms.entity.TicketOutRecord>
+     */
+    PageInfo<TicketOutRecord> findTicketOutRecordByPageNo(Integer pageNo);
+
+    /**
+     * 新增下发记录
+     * @date 2018/4/23
+     * @param [ticketOutRecord]
+     * @return void
+     */
+    void saveTicketOutRecord(TicketOutRecord ticketOutRecord);
+
+    /**
+     * 删除下发单
+     * @date 2018/4/23
+     * @param [id]
+     * @return void
+     */
+    void delTicketOutRecordById(Integer id);
 }
