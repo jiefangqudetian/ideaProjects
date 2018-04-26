@@ -16,7 +16,7 @@
                 <li class="${param.menu == 'ticket_chart'?'active':''}"><a href="/ticket/chart"><i class="fa fa-circle-o"></i> <span>盘点统计</span></a></li>
             <shiro:hasRole name="finance">
                 <li class="header">财务管理</li>
-                <li class="${param.menu == 'manage_account' ? 'active' : ''}"><a href=""><i class="fa fa-circle-o"></i> <span>售票点缴费</span></a></li>
+                <li class="${param.menu == 'finance_ticket' ? 'active' : ''}"><a href="/finance/ticket"><i class="fa fa-circle-o"></i> <span>售票点缴费</span></a></li>
                 <li class="${param.menu == 'manage_roles' ? 'active' : ''}"><a href=""><i class="fa fa-circle-o"></i> <span>景区结算</span></a></li>
                 <li class="${param.menu == 'manage_permission'?'active':''}"><a href=""><i class="fa fa-circle-o"></i> <span>销售统计</span></a></li>
                 <li class="${param.menu == 'manage_permission'?'active':''}"><a href=""><i class="fa fa-circle-o"></i> <span>验票统计</span></a></li>

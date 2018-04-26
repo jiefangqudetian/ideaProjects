@@ -435,62 +435,52 @@ public class TicketExample {
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeEqualTo(String value) {
+        public Criteria andUpdateTimeEqualTo(Date value) {
             addCriterion("update_time =", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeNotEqualTo(String value) {
+        public Criteria andUpdateTimeNotEqualTo(Date value) {
             addCriterion("update_time <>", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeGreaterThan(String value) {
+        public Criteria andUpdateTimeGreaterThan(Date value) {
             addCriterion("update_time >", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeGreaterThanOrEqualTo(String value) {
+        public Criteria andUpdateTimeGreaterThanOrEqualTo(Date value) {
             addCriterion("update_time >=", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeLessThan(String value) {
+        public Criteria andUpdateTimeLessThan(Date value) {
             addCriterion("update_time <", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeLessThanOrEqualTo(String value) {
+        public Criteria andUpdateTimeLessThanOrEqualTo(Date value) {
             addCriterion("update_time <=", value, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeLike(String value) {
-            addCriterion("update_time like", value, "updateTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andUpdateTimeNotLike(String value) {
-            addCriterion("update_time not like", value, "updateTime");
-            return (Criteria) this;
-        }
-
-        public Criteria andUpdateTimeIn(List<String> values) {
+        public Criteria andUpdateTimeIn(List<Date> values) {
             addCriterion("update_time in", values, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeNotIn(List<String> values) {
+        public Criteria andUpdateTimeNotIn(List<Date> values) {
             addCriterion("update_time not in", values, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeBetween(String value1, String value2) {
+        public Criteria andUpdateTimeBetween(Date value1, Date value2) {
             addCriterion("update_time between", value1, value2, "updateTime");
             return (Criteria) this;
         }
 
-        public Criteria andUpdateTimeNotBetween(String value1, String value2) {
+        public Criteria andUpdateTimeNotBetween(Date value1, Date value2) {
             addCriterion("update_time not between", value1, value2, "updateTime");
             return (Criteria) this;
         }
@@ -505,52 +495,62 @@ public class TicketExample {
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeEqualTo(Date value) {
+        public Criteria andTicketOutTimeEqualTo(String value) {
             addCriterion("ticket_out_time =", value, "ticketOutTime");
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeNotEqualTo(Date value) {
+        public Criteria andTicketOutTimeNotEqualTo(String value) {
             addCriterion("ticket_out_time <>", value, "ticketOutTime");
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeGreaterThan(Date value) {
+        public Criteria andTicketOutTimeGreaterThan(String value) {
             addCriterion("ticket_out_time >", value, "ticketOutTime");
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeGreaterThanOrEqualTo(Date value) {
+        public Criteria andTicketOutTimeGreaterThanOrEqualTo(String value) {
             addCriterion("ticket_out_time >=", value, "ticketOutTime");
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeLessThan(Date value) {
+        public Criteria andTicketOutTimeLessThan(String value) {
             addCriterion("ticket_out_time <", value, "ticketOutTime");
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeLessThanOrEqualTo(Date value) {
+        public Criteria andTicketOutTimeLessThanOrEqualTo(String value) {
             addCriterion("ticket_out_time <=", value, "ticketOutTime");
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeIn(List<Date> values) {
+        public Criteria andTicketOutTimeLike(String value) {
+            addCriterion("ticket_out_time like", value, "ticketOutTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andTicketOutTimeNotLike(String value) {
+            addCriterion("ticket_out_time not like", value, "ticketOutTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andTicketOutTimeIn(List<String> values) {
             addCriterion("ticket_out_time in", values, "ticketOutTime");
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeNotIn(List<Date> values) {
+        public Criteria andTicketOutTimeNotIn(List<String> values) {
             addCriterion("ticket_out_time not in", values, "ticketOutTime");
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeBetween(Date value1, Date value2) {
+        public Criteria andTicketOutTimeBetween(String value1, String value2) {
             addCriterion("ticket_out_time between", value1, value2, "ticketOutTime");
             return (Criteria) this;
         }
 
-        public Criteria andTicketOutTimeNotBetween(Date value1, Date value2) {
+        public Criteria andTicketOutTimeNotBetween(String value1, String value2) {
             addCriterion("ticket_out_time not between", value1, value2, "ticketOutTime");
             return (Criteria) this;
         }

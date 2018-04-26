@@ -10,7 +10,8 @@ import com.kaishengit.tms.mapper.TicketOutRecordMapper;
 import com.kaishengit.tms.mapper.TicketStoreMapper;
 import com.kaishengit.tms.service.TicketService;
 import com.kaishengit.tms.util.shiro.ShiroUtil;
-import org.apache.ibatis.javassist.NotFoundException;
+import org.apache.commons.lang3.StringUtils;
+import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -238,7 +239,7 @@ public class TicketServiceImpl implements TicketService {
      * @date 2018/4/23
      */
     @Override
-    public Map<String, Object> countTicketByState() {
+    public Map<String, Long> countTicketByState() {
         return ticketMapper.countTicketByState();
     }
 
@@ -271,9 +272,8 @@ public class TicketServiceImpl implements TicketService {
      */
     @Override
     public void saveTicketOutRecord(TicketOutRecord ticketOutRecord) {
+
         //判断当前票段内是否有非[已入库]状态的表，如果有则不能不发
-
-
         List<Ticket> ticketList = ticketMapper.selectOutByStartAndEndNum(ticketOutRecord.getBeginTicketNum(),ticketOutRecord.getEndTicketNum());
 
         for (Ticket ticket:ticketList){
@@ -281,6 +281,18 @@ public class TicketServiceImpl implements TicketService {
                 throw new ServiceException("该票段内已有下发的票，请重新选择");
             }
         }
+
+        //判断所输入票段是否真实存在
+        //获得 截止票号 和 起始票号 以及截止票号和起始票号之差
+        BigInteger start = new BigInteger(ticketOutRecord.getBeginTicketNum());
+        BigInteger end = new BigInteger(ticketOutRecord.getEndTicketNum());
+        int difference = end.subtract(start).intValue();
+        //起止票号之差加1，获得输入票数，与数据库中查到的票数做对比，如果相等，则票段真实存在
+        difference = difference+1;
+        if (difference!=ticketList.size()){
+            throw new ServiceException("该票段格式不对，请重新选择");
+        }
+
 
         //获取当前下发的售票点对象，并赋值售票点名称
         TicketStore ticketStore = ticketStoreMapper.selectByPrimaryKey(ticketOutRecord.getStoreAccountId());
@@ -308,7 +320,7 @@ public class TicketServiceImpl implements TicketService {
     }
 
     /**
-     * 删除下发单
+     * 删除下发记录
      * @param id
      * @return void
      * @date 2018/4/23
@@ -325,5 +337,74 @@ public class TicketServiceImpl implements TicketService {
             throw new ServiceException("支付完成，无法删除");
         }
 
+    }
+
+    /**
+     * 根据当前页号和查询参数查询下发列表
+     * @param pageNO
+     * @param queryParam
+     * @return com.github.pagehelper.PageInfo<com.kaishengit.tms.entity.TicketOutRecord>
+     * @date 2018/4/24
+     */
+    @Override
+    public PageInfo<TicketOutRecord> findTicketOutRecordByPageNoAndQueryParam(Integer pageNO, Map<String, Object> queryParam) {
+        PageHelper.startPage(pageNO,15);
+
+        TicketOutRecordExample ticketOutRecordExample = new TicketOutRecordExample();
+        String state = (String) queryParam.get("state");
+        if (StringUtils.isNotEmpty(state)){
+            ticketOutRecordExample.createCriteria().andStateEqualTo(state);
+        }
+        ticketOutRecordExample.setOrderByClause("id desc");
+
+        List<TicketOutRecord> ticketOutRecordList = ticketOutRecordMapper.selectByExample(ticketOutRecordExample);
+
+        return new PageInfo<>(ticketOutRecordList);
+    }
+
+    /**
+     * 根据ID查找对应下发单
+     * @param id
+     * @return com.kaishengit.tms.entity.TicketOutRecord
+     * @date 2018/4/24
+     */
+    @Override
+    public TicketOutRecord findTicketOutRecordById(Integer id) {
+        return ticketOutRecordMapper.selectByPrimaryKey(id);
+    }
+
+    /**
+     * 根据ID对对应的售票单进行支付-财务结算
+     *
+     * @param id
+     * @param payType
+     * @return void
+     * @date 2018/4/24
+     */
+    @Override
+    public void payTicketOutRecord(Integer id, String payType) {
+        TicketOutRecord ticketOutRecord = ticketOutRecordMapper.selectByPrimaryKey(id);
+        if (ticketOutRecord!=null && TicketOutRecord.STATE_NO_PAY.equals(ticketOutRecord.getState())){
+            ticketOutRecord.setPayType(payType);
+
+            Account account = shiroUtil.getCurrentAccount();
+            ticketOutRecord.setFinanceAccountId(account.getId());
+            ticketOutRecord.setFinanceAccountName(account.getAccountName());
+            ticketOutRecord.setState(TicketOutRecord.STATE_PAY);
+
+            //修改下发记录
+            ticketOutRecordMapper.updateByPrimaryKeySelective(ticketOutRecord);
+
+            //将对应的年票状态修改为[已下发]  这个方法可以优化，批量修改，增加数据库性能
+            List<Ticket> ticketList = ticketMapper.selectOutByStartAndEndNum(ticketOutRecord.getBeginTicketNum(),ticketOutRecord.getEndTicketNum());
+            for (Ticket ticket:ticketList){
+                ticket.setTicketState(Ticket.TICKET_STATE_OUT_STORE);
+                ticket.setStoreAccountId(ticketOutRecord.getStoreAccountId());
+                ticket.setTicketOutTime(DateTime.now().toString("YYYY-MM-dd"));
+                ticket.setUpdateTime(new Date());
+
+                ticketMapper.updateByPrimaryKeySelective(ticket);
+            }
+        }
     }
 }

@@ -61,7 +61,7 @@ public interface TicketService {
      * @param []
      * @return java.util.Map<java.lang.String,java.lang.Object>
      */
-    Map<String,Object> countTicketByState();
+    Map<String,Long> countTicketByState();
 
     /**
      * 根据页码查询下发记录
@@ -86,4 +86,28 @@ public interface TicketService {
      * @return void
      */
     void delTicketOutRecordById(Integer id);
+
+    /**
+     * 根据当前页号和查询参数查询下发列表
+     * @date 2018/4/24
+     * @param [pageNO, queryParam]
+     * @return com.github.pagehelper.PageInfo<com.kaishengit.tms.entity.TicketOutRecord>
+     */
+    PageInfo<TicketOutRecord> findTicketOutRecordByPageNoAndQueryParam(Integer pageNO, Map<String, Object> queryParam);
+
+    /**
+     * 根据ID查找对应下发单
+     * @date 2018/4/24
+     * @param [id]
+     * @return com.kaishengit.tms.entity.TicketOutRecord
+     */
+    TicketOutRecord findTicketOutRecordById(Integer id);
+
+    /**  
+     * 根据ID对对应的售票单进行支付-财务结算
+     * @date 2018/4/24
+     * @param [id, payType]  
+     * @return void  
+     */ 
+    void payTicketOutRecord(Integer id, String payType);
 }

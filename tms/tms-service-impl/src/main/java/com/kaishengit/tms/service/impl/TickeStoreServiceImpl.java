@@ -10,6 +10,7 @@ import com.kaishengit.tms.service.TicketStoreService;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +18,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * ticketStore接口实现类
+ * @author drm
+ * @date 2018/4/25
+ */
 @Service
 public class TickeStoreServiceImpl implements TicketStoreService {
 

@@ -57,7 +57,7 @@
     <!--配置spring配置文件的位置-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath*:spring*.xml</param-value> <!--4.12-->
+        <param-value>classpath*:spring/*.xml</param-value> <!--4.12-->
     </context-param>
 
 </web-app>

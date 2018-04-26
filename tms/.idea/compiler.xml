@@ -9,6 +9,7 @@
         <module name="tms-commons" />
         <module name="tms-finance-web" />
         <module name="tms-manager-web" />
+        <module name="tms-sales-web" />
         <module name="tms-service" />
         <module name="tms-service-impl" />
       </profile>
@@ -17,6 +18,7 @@
       <module name="tms-commons" target="1.8" />
       <module name="tms-finance-web" target="1.8" />
       <module name="tms-manager-web" target="1.8" />
+      <module name="tms-sales-web" target="1.5" />
       <module name="tms-service" target="1.8" />
       <module name="tms-service-impl" target="1.8" />
     </bytecodeTargetLevel>

@@ -7,35 +7,71 @@ import java.util.Date;
  * @author 
  */
 public class Ticket implements Serializable {
-
-    public static final String TICKET_STATE_IN_STORE = "已入库";
+	
+	public static final String TICKET_STATE_IN_STORE = "已入库";
     public static final String TICKET_STATE_OUT_STORE = "已下发";
     public static final String TICKET_STATE_SALE = "已销售";
     public static final String TICKET_STATE_LOST = "已挂失";
     public static final String TICKET_STATE_OUT_DATE = "已过期";
-
+	
+    /**
+     * 主键ID
+     */
     private Long id;
 
+    /**
+     * 年票号码
+     */
     private String ticketNum;
 
+    /**
+     * 入库时间
+     */
     private Date ticketInTime;
 
+    /**
+     * 年票状态
+     */
     private String ticketState;
 
+    /**
+     * 创建时间
+     */
     private Date createTime;
 
-    private String updateTime;
+    /**
+     * 修改时间
+     */
+    private Date updateTime;
 
-    private Date ticketOutTime;
+    /**
+     * 年票下发时间
+     */
+    private String ticketOutTime;
 
+    /**
+     * 有效期起始时间
+     */
     private Date ticketValidityStart;
 
+    /**
+     * 有效期过期时间
+     */
     private Date ticketValidityEnd;
 
+    /**
+     * 顾客ID
+     */
     private Long customerId;
 
+    /**
+     * 售票点ID
+     */
     private Integer storeAccountId;
 
+    /**
+     * 入库记录ID
+     */
     private Integer ticketInRecordId;
 
     private static final long serialVersionUID = 1L;
@@ -80,19 +116,19 @@ public class Ticket implements Serializable {
         this.createTime = createTime;
     }
 
-    public String getUpdateTime() {
+    public Date getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(String updateTime) {
+    public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
 
-    public Date getTicketOutTime() {
+    public String getTicketOutTime() {
         return ticketOutTime;
     }
 
-    public void setTicketOutTime(Date ticketOutTime) {
+    public void setTicketOutTime(String ticketOutTime) {
         this.ticketOutTime = ticketOutTime;
     }
 

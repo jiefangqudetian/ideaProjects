@@ -32,7 +32,7 @@ public class TicketController  {
     private TicketStoreService ticketStoreService;
 
     /**
-     * 年票入库首页
+     * 年票入库首页，入库记录
      * @date 2018/4/21
      * @param
      * @return java.lang.String
@@ -48,7 +48,7 @@ public class TicketController  {
     }
 
     /**
-     * 新增入库
+     * 新增入库记录
      * @date 2018/4/21
      * @param
      * @return java.lang.String
@@ -76,7 +76,7 @@ public class TicketController  {
         return "redirect:/ticket/storage";
     }
 
-    //年票删除
+    //入库记录删除
     @GetMapping("/storage/{id:\\d+}/del")
     public String delTicketStorage(@PathVariable Integer id,RedirectAttributes redirectAttributes){
         try {
@@ -89,7 +89,7 @@ public class TicketController  {
     }
 
     /**
-     * 年票编辑
+     * 入库记录编辑
      * @date 2018/4/23
      * @param id, model
      * @return java.lang.String
@@ -122,7 +122,7 @@ public class TicketController  {
      */
     @GetMapping("/chart")
     public String ticketChart(Model model){
-        Map<String,Object> resultMap = ticketService.countTicketByState();
+        Map<String,Long> resultMap = ticketService.countTicketByState();
         model.addAttribute("resultMap",resultMap);
         return "ticket/chart/home";
     }
@@ -141,7 +141,7 @@ public class TicketController  {
 
         PageInfo<TicketOutRecord> pageInfo = ticketService.findTicketOutRecordByPageNo(pageNo);
 
-        model.addAttribute("page",pageInfo);
+        model.addAttribute("pageInfo",pageInfo);
         return "ticket/out/home";
     }
 

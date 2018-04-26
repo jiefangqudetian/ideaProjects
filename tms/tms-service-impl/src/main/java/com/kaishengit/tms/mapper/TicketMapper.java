@@ -29,8 +29,8 @@ public interface TicketMapper {
     int updateByPrimaryKeySelective(Ticket record);
 
     int updateByPrimaryKey(Ticket record);
-
-    /*-------------以下方法为自定义-------------------*/
+	
+	 /*-------------以下方法为自定义-------------------*/
 
     /**
      * 批量插入年票
@@ -46,7 +46,7 @@ public interface TicketMapper {
      * @param []
      * @return java.util.Map<java.lang.String,java.lang.Object>
      */
-    Map<String,Object> countTicketByState();
+    Map<String,Long> countTicketByState();
 
     List<Ticket> selectByStartAndEndNum(String beginTicketNum, String endTicketNum, String ticketStateInStore);
 

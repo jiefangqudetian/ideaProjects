@@ -3,15 +3,15 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/tms-finance-web" />
     <file type="web" url="file://$PROJECT_DIR$/tms-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/tms-sales-web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/tms-commons/pom.xml" />
         <option value="$PROJECT_DIR$/tms-service/pom.xml" />
         <option value="$PROJECT_DIR$/tms-service-impl/pom.xml" />
         <option value="$PROJECT_DIR$/tms-manager-web/pom.xml" />
-        <option value="$PROJECT_DIR$/tms-finance-web/pom.xml" />
+        <option value="$PROJECT_DIR$/tms-sales-web/pom.xml" />
       </list>
     </option>
   </component>
