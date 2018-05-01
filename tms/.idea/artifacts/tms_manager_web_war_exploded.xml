@@ -10,7 +10,9 @@
           <element id="archive" name="tms-service-1.0-SNAPSHOT.jar">
             <element id="module-output" name="tms-service" />
           </element>
-          <element id="library" level="project" name="Maven: com.kaishengit:tms-commons:1.0-SNAPSHOT" />
+          <element id="archive" name="tms-commons-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="tms-commons" />
+          </element>
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.4" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.4" />

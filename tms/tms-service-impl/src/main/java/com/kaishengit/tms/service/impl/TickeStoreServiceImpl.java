@@ -187,4 +187,35 @@ public class TickeStoreServiceImpl implements TicketStoreService {
         ticketStoreExample.setOrderByClause("id desc");
         return ticketStoreMapper.selectByExample(ticketStoreExample);
     }
+
+    /**
+     * 根据账号（手机号码）查找售票点账号对象
+     *
+     * @param userMobile 账号（手机号）
+     * @return com.kaishengit.tms.entity.StoreAccount
+     * @date 2018/4/29
+     */
+    @Override
+    public StoreAccount findStoreAccountByName(String userMobile) {
+        StoreAccountExample storeAccountExample = new StoreAccountExample();
+        storeAccountExample.createCriteria().andStoreAccountEqualTo(userMobile);
+
+        List<StoreAccount> storeAccountList = storeAccountMapper.selectByExample(storeAccountExample);
+        if (storeAccountList!=null && !storeAccountList.isEmpty()){
+            return storeAccountList.get(0);
+        }
+        return null;
+    }
+
+    /**
+     * 保存售票点登录日志
+     *
+     * @param storeLoginLog 售票点登录日志
+     * @return void
+     * @date 2018/4/29
+     */
+    @Override
+    public void saveStoreAccountLoginLog(StoreLoginLog storeLoginLog) {
+        storeLoginLogMapper.insertSelective(storeLoginLog);
+    }
 }

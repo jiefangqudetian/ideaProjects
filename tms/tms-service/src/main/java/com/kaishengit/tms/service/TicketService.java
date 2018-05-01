@@ -1,9 +1,10 @@
 package com.kaishengit.tms.service;
 
 import com.github.pagehelper.PageInfo;
-import com.kaishengit.tms.entity.TicketInRecord;
-import com.kaishengit.tms.entity.TicketOutRecord;
+import com.kaishengit.tms.entity.*;
+import com.kaishengit.tms.exception.ServiceException;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
@@ -22,12 +23,12 @@ public interface TicketService {
     void saveTicketInRecord(TicketInRecord ticketInRecord);
 
     /**
-     * 查找所有入库记录
-     * @date 2018/4/21
-     * @param []
-     * @return java.util.List<com.kaishengit.tms.entity.TicketInRecord>
+     * 根据页码查询入库记录
+     * @date 2018/4/23
+     * @param [pageNo]
+     * @return com.github.pagehelper.PageInfo<com.kaishengit.tms.entity.TicketInRecord>
      */
-    List<TicketInRecord> findAllTicketInRecord();
+    PageInfo<TicketInRecord> findTicketRecordByPageNo(Integer pageNo);
 
     /**
      * 根据id删除入库记录
@@ -37,26 +38,8 @@ public interface TicketService {
      */
     void delTicketInRecordById(Integer id);
 
-    TicketInRecord findTicketInRecordById(Integer id);
-
     /**
-     * 修改入库记录
-     * @date 2018/4/21
-     * @param [ticketInRecord]
-     * @return void
-     */
-    void updateTicketInRecord(TicketInRecord ticketInRecord);
-
-    /**
-     * 根据页码查询入库记录
-     * @date 2018/4/23
-     * @param [pageNo]
-     * @return com.github.pagehelper.PageInfo<com.kaishengit.tms.entity.TicketInRecord>
-     */
-    PageInfo<TicketInRecord> findTicketRecordByPageNo(Integer pageNo);
-
-    /**
-     * 根据年票状态统计年票数量
+     * 统计各个状态的年票数量
      * @date 2018/4/23
      * @param []
      * @return java.util.Map<java.lang.String,java.lang.Object>
@@ -64,15 +47,7 @@ public interface TicketService {
     Map<String,Long> countTicketByState();
 
     /**
-     * 根据页码查询下发记录
-     * @date 2018/4/23
-     * @param [pageNo]
-     * @return com.github.pagehelper.PageInfo<com.kaishengit.tms.entity.TicketOutRecord>
-     */
-    PageInfo<TicketOutRecord> findTicketOutRecordByPageNo(Integer pageNo);
-
-    /**
-     * 新增下发记录
+     * 新增年票下发记录
      * @date 2018/4/23
      * @param [ticketOutRecord]
      * @return void
@@ -80,7 +55,16 @@ public interface TicketService {
     void saveTicketOutRecord(TicketOutRecord ticketOutRecord);
 
     /**
-     * 删除下发单
+     * 根据当前页码查询下发记录
+     * @date 2018/4/23
+     * @param [pageNo]
+     * @return com.github.pagehelper.PageInfo<com.kaishengit.tms.entity.TicketOutRecord>
+     */
+    PageInfo<TicketOutRecord> findTicketOutRecordByPageNo(Integer pageNo);
+
+
+    /**
+     * 根据主键删除下发单
      * @date 2018/4/23
      * @param [id]
      * @return void
@@ -96,6 +80,59 @@ public interface TicketService {
     PageInfo<TicketOutRecord> findTicketOutRecordByPageNoAndQueryParam(Integer pageNO, Map<String, Object> queryParam);
 
     /**
+     * 根据ID对对应的售票单进行支付-财务结算
+     * @date 2018/4/24
+     * @param [id, payType]
+     * @return void
+     */
+    void payTicketOutRecord(Integer id, String payType);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**
+     * 查找所有入库记录
+     * @date 2018/4/21
+     * @param []
+     * @return java.util.List<com.kaishengit.tms.entity.TicketInRecord>
+     */
+    List<TicketInRecord> findAllTicketInRecord();
+
+
+
+    TicketInRecord findTicketInRecordById(Integer id);
+
+    /**
+     * 修改入库记录
+     * @date 2018/4/21
+     * @param [ticketInRecord]
+     * @return void
+     */
+    void updateTicketInRecord(TicketInRecord ticketInRecord);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**
      * 根据ID查找对应下发单
      * @date 2018/4/24
      * @param [id]
@@ -103,11 +140,30 @@ public interface TicketService {
      */
     TicketOutRecord findTicketOutRecordById(Integer id);
 
-    /**  
-     * 根据ID对对应的售票单进行支付-财务结算
-     * @date 2018/4/24
-     * @param [id, payType]  
-     * @return void  
-     */ 
-    void payTicketOutRecord(Integer id, String payType);
+
+
+    /**
+     * 查询当前售票点库存年票数量和已售出年票数量
+     * @date 2018/4/27
+     * @param [id]
+     * @return java.util.Map<java.lang.String,java.lang.Long>
+     */
+    Map<String,Long> countTicketByStateAndStoreAccountId(Integer id);
+
+    /**
+     *
+     * @date 2018/4/29
+     * @param customer 销售年票的客户对象, ticketNum 年票票号, ticketStore 当前售票点, price 价格
+     * @return void
+     * @throws ServiceException 销售失败抛出异常
+     */
+    void salesTicket(Customer customer, String ticketNum, TicketStore ticketStore, BigDecimal price) throws ServiceException;
+
+    /**
+     * 根据年票号码查询年票
+     * @date 2018/4/29
+     * @param  ticketNum
+     * @return com.kaishengit.tms.entity.Ticket
+     */
+    Ticket findTicketByTicketNum(String ticketNum);
 }

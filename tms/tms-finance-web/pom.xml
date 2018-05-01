@@ -22,7 +22,7 @@
         <!--service实现类-->
         <dependency>
             <groupId>com.kaishengit</groupId>
-            <artifactId>tms-service-impl</artifactId>
+            <artifactId>tms-service</artifactId>
         </dependency>
 
         <dependency>
@@ -50,11 +50,38 @@
             <artifactId>commons-fileupload</artifactId>
         </dependency>
 
+        <!--shiro-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-all</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
         <!--ehcache-->
         <dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache</artifactId>
             <version>2.10.4</version>
+        </dependency>
+
+
+        <!--dubbo-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-context</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--zookeeper客户端-->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>2.12.0</version>
         </dependency>
     </dependencies>
 

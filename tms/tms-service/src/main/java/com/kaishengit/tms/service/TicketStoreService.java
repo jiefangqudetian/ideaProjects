@@ -2,6 +2,7 @@ package com.kaishengit.tms.service;
 
 import com.github.pagehelper.PageInfo;
 import com.kaishengit.tms.entity.StoreAccount;
+import com.kaishengit.tms.entity.StoreLoginLog;
 import com.kaishengit.tms.entity.TicketStore;
 
 import java.util.List;
@@ -68,4 +69,20 @@ public interface TicketStoreService {
      * @return java.util.List<com.kaishengit.tms.entity.TicketStore>
      */
     List<TicketStore> findAllTicketStore();
+
+    /**
+     * 根据账号（手机号码）查找售票点账号对象
+     * @date 2018/4/29
+     * @param userMobile 账号（手机号）
+     * @return com.kaishengit.tms.entity.StoreAccount
+     */
+    StoreAccount findStoreAccountByName(String userMobile);
+
+    /**
+     * 保存售票点登录日志
+     * @date 2018/4/29
+     * @param storeLoginLog 售票点登录日志
+     * @return void
+     */
+    void saveStoreAccountLoginLog(StoreLoginLog storeLoginLog);
 }

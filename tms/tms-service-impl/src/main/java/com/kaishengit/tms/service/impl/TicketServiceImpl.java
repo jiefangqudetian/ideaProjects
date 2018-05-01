@@ -4,17 +4,16 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.kaishengit.tms.entity.*;
 import com.kaishengit.tms.exception.ServiceException;
-import com.kaishengit.tms.mapper.TicketInRecordMapper;
-import com.kaishengit.tms.mapper.TicketMapper;
-import com.kaishengit.tms.mapper.TicketOutRecordMapper;
-import com.kaishengit.tms.mapper.TicketStoreMapper;
+import com.kaishengit.tms.mapper.*;
 import com.kaishengit.tms.service.TicketService;
+import com.kaishengit.tms.util.SnowFlake;
 import com.kaishengit.tms.util.shiro.ShiroUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -41,6 +40,14 @@ public class TicketServiceImpl implements TicketService {
     private TicketOutRecordMapper ticketOutRecordMapper;
     @Autowired
     private TicketStoreMapper ticketStoreMapper;
+    @Autowired
+    private CustomerMapper customerMapper;
+    @Autowired
+    private TicketOrderMapper ticketOrderMapper;
+    @Value("${snowFlake.dataCenterId}")
+    private Integer snowFlakeDataCenter;
+    @Value("${snowFlake.machineId}")
+    private Integer snowFlakeMachineId;
 
 
     /**
@@ -406,5 +413,120 @@ public class TicketServiceImpl implements TicketService {
                 ticketMapper.updateByPrimaryKeySelective(ticket);
             }
         }
+    }
+
+    /**
+     * 查询当前售票点库存年票数量和已售出年票数量
+     *
+     * @param id
+     * @return java.util.Map<java.lang.String , java.lang.Long>
+     * @date 2018/4/27
+     */
+    @Override
+    public Map<String, Long> countTicketByStateAndStoreAccountId(Integer id) {
+        return null;
+    }
+
+    /**
+     * 销售年票
+     * @param customer    销售年票的客户对象, ticketNum 年票票号, ticketStore 当前售票点, price 价格
+     * @param ticketNum
+     * @param ticketStore
+     * @param price
+     * @return void
+     * @throws ServiceException 销售失败抛出异常
+     * @date 2018/4/29
+     */
+    @Override
+    @Transactional(rollbackFor = RuntimeException.class)
+    public void salesTicket(Customer customer, String ticketNum, TicketStore ticketStore, BigDecimal price) throws ServiceException {
+
+        //1.根据年票票号查找年票，查看年票是否属于该售票点并看年票的状态是否属于已下发
+        TicketExample ticketExample = new TicketExample();
+        ticketExample.createCriteria().andTicketNumEqualTo(ticketNum);
+
+        List<Ticket> ticketList = ticketMapper.selectByExample(ticketExample);
+        if (ticketList!=null && !ticketList.isEmpty()){
+            Ticket ticket = ticketList.get(0);
+            if (Ticket.TICKET_STATE_OUT_STORE.equals(ticket.getTicketState())){
+                if (ticket.getStoreAccountId().equals(ticketStore.getId())){
+
+                    //判断该用户是否办理过你年票
+                    CustomerExample customerExample = new CustomerExample();
+                    customerExample.createCriteria().andCustomerIdCardEqualTo(customer.getCustomerIdCard());
+                    List<Customer> customerList = customerMapper.selectByExample(customerExample);
+                    if (customerList!=null && !customerList.isEmpty()){
+                        Customer dbCustomer = customerList.get(0);
+                        //查询当前用户绑定的年票
+                        Ticket customerTicket = ticketMapper.selectByPrimaryKey(dbCustomer.getTicketId());
+                        if (customerTicket!=null){
+                            if (Ticket.TICKET_STATE_SALE.equals(customerTicket.getTicketState())){
+                                throw new ServiceException("该用户已购买过年票，不能再次购买");
+                            }
+                        } else {
+                            //用户存在，但未绑定年票
+                            customer = dbCustomer;
+                        }
+                    }else {
+                        //2.该用户未办理过年票，保存客户
+                        customer.setTicketId(ticket.getId());
+                        customer.setCreateTime(new Date());
+                        customerMapper.insertSelective(customer);
+                    }
+
+                    //3.将年票状态修改为[已销售]
+                    ticket.setTicketState(Ticket.TICKET_STATE_SALE);
+                        //设置年票有效期
+                    ticket.setTicketValidityStart(new Date());
+
+                    DateTime endDate = DateTime.now().plusYears(1);
+                    ticket.setTicketValidityEnd(endDate.toDate());
+                    //绑定销售用户
+                    ticket.setCustomerId(customer.getId());
+                    //修该年票对象
+                    ticketMapper.updateByPrimaryKeySelective(ticket);
+
+
+                    //4.创建销售订单
+                    TicketOrder ticketOrder = new TicketOrder();
+                    ticketOrder.setCreateTime(new Date());
+                    ticketOrder.setCustomerId(customer.getId());
+                    ticketOrder.setStoreAccountId(ticketStore.getId());
+                    ticketOrder.setTicketId(ticket.getId());
+                    ticketOrder.setTicketOrderPrice(price);
+                    //流水号
+                    SnowFlake snowFlake = new SnowFlake(snowFlakeDataCenter,snowFlakeMachineId);
+                    ticketOrder.setTicketOrderNum(String.valueOf(snowFlake.nextId()));
+                    ticketOrder.setTicketOrderType(TicketOrder.ORDER_TYPE_NEW);
+
+                    ticketOrderMapper.insertSelective(ticketOrder);
+                } else {
+                    throw new ServiceException("该年票不属于当前售票点，请核查");
+                }
+            }else{
+                throw new ServiceException("该年票状态异常，请核查");
+            }
+        } else {
+            throw new ServiceException("该年票不存在，请查找票号");
+        }
+    }
+
+    /**
+     * 根据年票号码查询年票
+     *
+     * @param ticketNum
+     * @return com.kaishengit.tms.entity.Ticket
+     * @date 2018/4/29
+     */
+    @Override
+    public Ticket findTicketByTicketNum(String ticketNum) {
+        TicketExample ticketExample = new TicketExample();
+        ticketExample.createCriteria().andTicketNumEqualTo(ticketNum);
+
+        List<Ticket> ticketList = ticketMapper.selectByExample(ticketExample);
+
+
+
+        return (ticketList == null || ticketList.isEmpty())?null:ticketList.get(0);
     }
 }
