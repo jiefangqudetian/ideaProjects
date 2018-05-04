@@ -6,6 +6,8 @@
         <fileset id="fileset" name="Spring Redis" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/spring-redis.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring-data-redis.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-jedis-cluster.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-data-redis-cluster.xml</file>
         </fileset>
       </configuration>
     </facet>
