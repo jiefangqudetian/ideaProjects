@@ -12,6 +12,6 @@
     </context:component-scan>
 
     <!--加载properties文件-->
-    <context:property-placeholder location="classpath:config.properties"/>
+    <!--<context:property-placeholder location="classpath:config.properties"/>-->
 
 </beans>

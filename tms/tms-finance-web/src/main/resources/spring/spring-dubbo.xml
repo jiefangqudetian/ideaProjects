@@ -9,8 +9,9 @@
 
     <!--引用服务-->
     <dubbo:reference interface="com.kaishengit.tms.service.AccountService" id="accountService"/>
-    <dubbo:reference interface="com.kaishengit.tms.service.RolePermissionService" id="rolePermissionService"/>
+    <dubbo:reference interface="com.kaishengit.tms.service.TicketService" id="ticketService"/>
 
+    <dubbo:reference interface="com.kaishengit.tms.service.RolePermissionService" id="rolePermissionService"/>
     <dubbo:reference interface="com.kaishengit.tms.service.TicketStoreService" id="ticketStoreService"/>
 
 

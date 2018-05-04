@@ -101,12 +101,12 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="photo">
-                                <img src="http://p7f6tjc1h.bkt.clouddn.com/${ticketStore.storeManagerAttachment}-preview" alt="">
+                                <img src="http://p825m8548.bkt.clouddn.com/${ticketStore.storeManagerAttachment}-previews" alt="">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="photo">
-                                <img src="http://p7f6tjc1h.bkt.clouddn.com/${ticketStore.storeAttachment}-preview" alt="">
+                                <img src="http://p825m8548.bkt.clouddn.com/${ticketStore.storeAttachment}-previews" alt="">
                             </div>
                         </div>
                     </div>
