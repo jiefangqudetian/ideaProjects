@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a4a90f7-a0bd-43dd-a85e-c02d36ae1fac" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tms-finance-web/src/main/resources/log4j.properties" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/tms_finance_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/tms_finance_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/tms-finance-web/pom.xml" afterPath="$PROJECT_DIR$/tms-finance-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/tms-finance-web/src/main/resources/spring/spring-dubbo.xml" afterPath="$PROJECT_DIR$/tms-finance-web/src/main/resources/spring/spring-dubbo.xml" />
-      <change beforePath="$PROJECT_DIR$/tms-finance-web/src/main/resources/spring/spring.xml" afterPath="$PROJECT_DIR$/tms-finance-web/src/main/resources/spring/spring.xml" />
-      <change beforePath="$PROJECT_DIR$/tms-finance-web/tms-finance-web.iml" afterPath="$PROJECT_DIR$/tms-finance-web/tms-finance-web.iml" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/resources/config.properties" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/info.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/info.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp" afterPath="$PROJECT_DIR$/tms-manager-web/src/main/webapp/WEB-INF/views/store/new.jsp" />
-      <change beforePath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" afterPath="$PROJECT_DIR$/tms-service-impl/tms-service-impl.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../redis/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/kaishengit/entity/Log4jTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../redis/src/main/resources/log4j.properties" />
+      <change beforePath="$PROJECT_DIR$/../douyu/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/douyu.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/src/main/java/com/kaishengit/web/HomeServlet.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/src/main/webapp/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../douyu/src/main/webapp/index.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../redis/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../redis/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../redis/pom.xml" afterPath="$PROJECT_DIR$/../redis/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/../redis/redis.iml" afterPath="$PROJECT_DIR$/../redis/redis.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/tms-commons/target/" />
     <ignored path="$PROJECT_DIR$/tms-service/target/" />
@@ -242,8 +250,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -477,14 +485,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="spring" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tms-finance-web/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -845,11 +853,12 @@
       <workItem from="1525175882905" duration="10767000" />
       <workItem from="1525221428183" duration="1720000" />
       <workItem from="1525279035354" duration="65000" />
+      <workItem from="1525451099494" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347955000" />
+    <option name="totallyTimeSpent" value="347990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -878,7 +887,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6689304" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22290076" sideWeight="0.4804754" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22748092" sideWeight="0.4804754" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25725192" sideWeight="0.51952463" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19923665" sideWeight="0.48726654" order="1" side_tool="false" content_ui="tabs" />
