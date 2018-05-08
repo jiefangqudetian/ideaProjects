@@ -8,7 +8,7 @@ import org.junit.Test;
 import javax.jms.*;
 import java.io.IOException;
 
-public class HelloTest {
+public class QueueTest {
 
     @Test
     public void createMessage(){
@@ -31,7 +31,7 @@ public class HelloTest {
             connection = connectionFactory.createConnection();
             connection.start();
             //3.创建Session(是否需要事务，消息签收模式：AUTO_ACKNOLEDGE自动签收  CLIENT_ACKNOLEDGE客户端签收)
-            session = connection.createSession(true,Session.AUTO_ACKNOWLEDGE);
+            session = connection.createSession(true,Session.CLIENT_ACKNOWLEDGE);
             //4.创建消息目的地
             Destination destination = session.createQueue("hello-Queue");
             //5.创建生产者
@@ -39,7 +39,7 @@ public class HelloTest {
             //使用持久模式
             producer.setDeliveryMode(DeliveryMode.PERSISTENT);
             //6.发送消息
-            TextMessage textMessage = session.createTextMessage("Hello,Message-2");
+            TextMessage textMessage = session.createTextMessage("Hello,Message-10");
             producer.send(textMessage);
             //提交事务
             session.commit();
@@ -72,7 +72,7 @@ public class HelloTest {
         Connection connection = connectionFactory.createConnection();
         connection.start();
         //3.创建Session(是否需要事务，消息签收模式：AUTO_ACKNOLEDGE自动签收  CLIENT_ACKNOLEDGE客户端签收)
-        final Session session = connection.createSession(true,Session.AUTO_ACKNOWLEDGE);
+        final Session session = connection.createSession(false,Session.AUTO_ACKNOWLEDGE);
         //4.创建消息目的地
         Destination destination = session.createQueue("hello-Queue");
         //5.创建消费者
@@ -89,7 +89,7 @@ public class HelloTest {
                     }
                     System.out.println("Message:-->" + text);
                     //手动签收消息
-                    message.acknowledge();
+                    //message.acknowledge();
                 } catch (Exception e){
                     e.printStackTrace();
 
