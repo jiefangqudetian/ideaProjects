@@ -5,4 +5,5 @@
 
     <import resource="classpath:spring-context.xml"/>
     <import resource="classpath:spring-dubbo.xml"/>
+    <import resource="classpath:spring-quartz.xml"/>
 </beans>

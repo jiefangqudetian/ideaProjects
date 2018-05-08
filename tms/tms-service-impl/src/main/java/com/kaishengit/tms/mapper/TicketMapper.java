@@ -65,4 +65,22 @@ public interface TicketMapper {
      * @return java.util.List<com.kaishengit.tms.entity.Ticket>
      */
     List<Ticket> selectOutByStartAndEndNum(String beginTicketNum, String endTicketNum);
+
+    /**  
+     * 批量修改年票状态
+     * @date 2018/5/9
+     * @param [outTimeTicketList, state]  
+     * @return void  
+     */ 
+    void batchUpdateState(@Param("ticketList") List<Ticket> outTimeTicketList,@Param("state") String state);
+
+    /**
+     * 批量删除年票
+     * @date 2018/5/9
+     * @param [idList]
+     * @return void
+     */
+    void batchDeleteById(@Param("idList") List<Long> idList);
+
+
 }

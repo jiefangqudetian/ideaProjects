@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f2c9632-0514-4118-956d-93ee5320135b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_14_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_14_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_14_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/jms/consumer/MessageConsumer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/jms/consumer/SpringQueueListener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/jms/consumer/SpringQueueListener2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/jms/consumer/SpringQueueListener3.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/jms/consumer/SpringTopicListener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/jms/consumer/SpringTopicListener2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-jms-queque.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-jms-queque2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-jms-queque3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-jms-queque4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-jms-topic.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-jms-topic2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-jms-topic3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kaishengit/activemq/PubSubTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kaishengit/spring/mq/QueueTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kaishengit/spring/mq/TopciTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/JMS-ACTIVEMQ.iml" afterPath="$PROJECT_DIR$/JMS-ACTIVEMQ.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kaishengit/activemq/HelloTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/kaishengit/activemq/QueueTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kaishengit/activemq/HelloTest$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kaishengit/activemq/HelloTest$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kaishengit/activemq/HelloTest.class" afterPath="" />
-    </list>
+    <list default="true" id="0f2c9632-0514-4118-956d-93ee5320135b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -263,7 +229,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="E:/kaisheng25/software/cmder/vendor/git-for-windows/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tms" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -530,7 +496,7 @@
       <option name="presentableId" value="Default" />
       <updated>1525700090465</updated>
       <workItem from="1525700093130" duration="8979000" />
-      <workItem from="1525748565856" duration="20969000" />
+      <workItem from="1525748565856" duration="21571000" />
     </task>
     <servers />
   </component>
@@ -567,7 +533,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29948000" />
+    <option name="totallyTimeSpent" value="30550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -626,7 +592,7 @@
         <state relative-caret-position="1276">
           <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -724,7 +690,7 @@
         <state relative-caret-position="1196">
           <caret line="67" column="33" lean-forward="false" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -766,7 +732,7 @@
         <state relative-caret-position="360">
           <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>

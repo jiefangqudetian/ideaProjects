@@ -112,6 +112,14 @@
             where ticket_num &gt;= convert(#{param1},unsigned int)
             and ticket_num &lt;= convert(#{param2},unsigned int)
     </delete>
+  <delete id="batchDeleteById">
+    DELETE from tickets
+    WHERE id IN (
+      <foreach collection="idList" item="id" separator=",">
+        #{id}
+      </foreach>
+    )
+  </delete>
   <insert id="insert" parameterType="com.kaishengit.tms.entity.Ticket">
     insert into ticket (id, ticket_num, ticket_in_time, 
       ticket_state, create_time, update_time, 
@@ -354,4 +362,13 @@
       ticket_in_record_id = #{ticketInRecordId,jdbcType=INTEGER}
     where id = #{id,jdbcType=BIGINT}
   </update>
+    <update id="batchUpdateState">
+      update tickets set ticket_state = #{state} where
+        id in(
+      <foreach collection="ticketList" item="ticket" separator=",">
+        #{ticket.id}
+      </foreach>
+        )
+
+    </update>
 </mapper>

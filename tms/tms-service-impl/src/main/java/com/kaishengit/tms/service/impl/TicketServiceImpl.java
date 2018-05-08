@@ -416,6 +416,32 @@ public class TicketServiceImpl implements TicketService {
     }
 
     /**
+     * 根据年票状态查询年票列表
+     *
+     * @param ticketState
+     * @return java.util.List<com.kaishengit.tms.entity.Ticket>
+     * @date 2018/5/9
+     */
+    @Override
+    public List<Ticket> findTicketByState(String ticketState) {
+        TicketExample ticketExample = new TicketExample();
+        ticketExample.createCriteria().andTicketStateEqualTo(ticketState);
+        return ticketMapper.selectByExample(ticketExample);
+    }
+
+    /**
+     * 批量修改年票状态
+     *
+     * @param outTimeTicketList
+     * @return void
+     * @date 2018/5/9
+     */
+    @Override
+    public void batchUpdateTicketState(List<Ticket> outTimeTicketList) {
+        ticketMapper.batchUpdateState(outTimeTicketList,Ticket.TICKET_STATE_OUT_DATE);
+    }
+
+    /**
      * 查询当前售票点库存年票数量和已售出年票数量
      *
      * @param id

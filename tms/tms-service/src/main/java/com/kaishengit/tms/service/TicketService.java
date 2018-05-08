@@ -87,6 +87,22 @@ public interface TicketService {
      */
     void payTicketOutRecord(Integer id, String payType);
 
+    /**  
+     * 根据年票状态查询年票列表
+     * @date 2018/5/9
+     * @param [ticketState]  
+     * @return java.util.List<com.kaishengit.tms.entity.Ticket>  
+     */ 
+    List<Ticket> findTicketByState(String ticketState);
+
+    /**  
+     * 批量修改年票状态
+     * @date 2018/5/9
+     * @param [outTimeTicketList]  
+     * @return void  
+     */ 
+    void batchUpdateTicketState(List<Ticket> outTimeTicketList);
+
 
 
 
