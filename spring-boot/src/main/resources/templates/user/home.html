@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" th:href="@{'/css/style.css'}"     href="../../static/css/style.css">
 </head>
 <body>
 
     <h3 th:text="${message}">hello</h3>
     <h3 th:if="${message=='你好'}">hello</h3>
+
+    <h3 class="text-danger">服务器给的数据是：[[${message}]]</h3>
 
 
     <ul th:switch="${message}">
@@ -42,5 +45,11 @@
     console.log(id);
     [/]
 
+</script>
+<script th:src="@{'/webjars/jquery/jquery.min.js'}"></script>
+<script>
+    $(function () {
+        console.log($);
+    })
 </script>
 </html>

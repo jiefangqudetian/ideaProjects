@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="1" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+         layout:decorate="~{layout}" id="2" name="123"
+         th:with="menu='home'" xmlns:th="http://www.thymeleaf.org">
+<script layout:fragment="js">
+    $(function () {
+        alert("hehe");
+    })
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>内容页</title>
+    <style>
+        #content {
+            color: darkred;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="content" layout:fragment="content">
+        这是首页
+        <div>haha</div>
+    </div>
+    <div id="content1">早上好</div>
+    <script layout:fragment="js">
+        $(function () {
+            alert("hehe");
+        })
+    </script>
+    <script >
+        $(function () {
+            alert("hehe1");
+        })
+    </script>
+</body>
+<script >
+    $(function () {
+        alert("hehe2");
+    })
+</script>
+</html>
