@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--推荐使用 类似类的完全限定名-->
+<mapper namespace="com.kaishengit.mapper.MovieMapper">
+    <select id="findById" resultType="com.kaishengit.entity.Movie">
+        select * from movie where id = #{id}
+    </select>
+    <select id="findAll" resultType="com.kaishengit.entity.Movie">
+        SELECT * from movie
+    </select>
+</mapper>

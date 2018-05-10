@@ -1,4 +1,4 @@
-package com.kaishengit.springboot.web.interceptor;
+package com.kaishengit.web.interceptor;
 
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 

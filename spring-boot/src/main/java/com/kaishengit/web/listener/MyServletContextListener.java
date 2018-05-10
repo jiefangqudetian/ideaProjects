@@ -1,4 +1,4 @@
-package com.kaishengit.springboot.web.listener;
+package com.kaishengit.web.listener;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

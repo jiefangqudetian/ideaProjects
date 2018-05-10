@@ -1,17 +1,14 @@
-package com.kaishengit.springboot.config;
+package com.kaishengit.config;
 
-import com.kaishengit.springboot.web.filter.MyFilter;
-import com.kaishengit.springboot.web.interceptor.MyInterceptor;
-import com.kaishengit.springboot.web.listener.MyServletContextListener;
+import com.kaishengit.web.filter.MyFilter;
+import com.kaishengit.web.interceptor.MyInterceptor;
+import com.kaishengit.web.listener.MyServletContextListener;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-
-import javax.servlet.ServletContextListener;
 
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {

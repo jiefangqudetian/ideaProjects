@@ -1,7 +1,7 @@
-package com.kaishengit.springboot.controller;
+package com.kaishengit.controller;
 
 
-import com.kaishengit.springboot.dao.UserDao;
+import com.kaishengit.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

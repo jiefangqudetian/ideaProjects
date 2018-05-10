@@ -1,4 +1,4 @@
-package com.kaishengit.springboot.web.filter;
+package com.kaishengit.web.filter;
 
 import javax.servlet.*;
 import java.io.IOException;

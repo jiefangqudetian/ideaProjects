@@ -1,4 +1,4 @@
-package com.kaishengit.springboot.dao;
+package com.kaishengit.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
