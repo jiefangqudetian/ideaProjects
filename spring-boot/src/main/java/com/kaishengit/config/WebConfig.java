@@ -20,7 +20,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
      * @param []
      * @return org.springframework.boot.web.servlet.FilterRegistrationBean
      */
-    @Bean
+    //@Bean
     public FilterRegistrationBean filterRegistrationBean(){
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
         filterRegistrationBean.setFilter(new MyFilter());
@@ -35,7 +35,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
      * @param []
      * @return org.springframework.boot.web.servlet.ServletListenerRegistrationBean
      */
-    @Bean
+    //@Bean
     public ServletListenerRegistrationBean servletListenerRegistrationBean(){
         ServletListenerRegistrationBean servletListenerRegistrationBean = new ServletListenerRegistrationBean();
         servletListenerRegistrationBean.setListener(new MyServletContextListener());
@@ -48,10 +48,10 @@ public class WebConfig extends WebMvcConfigurerAdapter {
      * @param [registry]  
      * @return void  
      */
-    @Override
+    /*@Override
     public void addInterceptors(InterceptorRegistry registry){
         registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**");
-    }
+    }*/
 
 
 

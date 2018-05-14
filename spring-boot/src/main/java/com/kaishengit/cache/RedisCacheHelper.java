@@ -2,16 +2,15 @@ package com.kaishengit.cache;
 
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
+
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 
-@Component
+//@Component
 public class RedisCacheHelper {
 
-    private RedisTemplate redisTemplate;
+   /* private RedisTemplate redisTemplate;
 
     @Autowired
     public void setRedisTemplate(RedisTemplate redisTemplate){
@@ -40,5 +39,5 @@ public class RedisCacheHelper {
 
     public void remove(String key){
         redisTemplate.delete(key);
-    }
+    }*/
 }

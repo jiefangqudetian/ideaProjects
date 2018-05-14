@@ -2,49 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e82e40d2-2ba1-4ce0-a63f-24642f32a42e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../redis/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../redis/src/main/java/com/kaishengit/entity/Log4jTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../redis/src/main/resources/log4j.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_45.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_14_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_14_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_14_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/MyAsyncExceptionHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/SendMail.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/UserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/quartz/CheckTicketJob.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/quartz/SendWeixin.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/quartz/SpringQuartzJob.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/task/TaskJob.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config/quartz.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-async.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-datasource.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-quartz.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-task-annotation.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kaishengit/spring/QuartzTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kaishengit/spring/SpringTaskTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kaishengit/spring/async/UserServiceTest.java" />
-      <change beforePath="$PROJECT_DIR$/../douyu/.idea/compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/douyu.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/src/main/java/com/kaishengit/web/HomeServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/src/main/webapp/WEB-INF/web.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../douyu/src/main/webapp/index.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../redis/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../redis/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../redis/pom.xml" afterPath="$PROJECT_DIR$/../redis/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/../redis/redis.iml" afterPath="$PROJECT_DIR$/../redis/redis.iml" />
-      <change beforePath="$PROJECT_DIR$/../tms/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../tms/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-task-annotation.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-task-annotation.xml" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot/src/main/java/com/kaishengit/Application.java" afterPath="$PROJECT_DIR$/../spring-boot/src/main/java/com/kaishengit/Application.java" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot/src/main/java/com/kaishengit/controller/HelloController.java" afterPath="$PROJECT_DIR$/../spring-boot/src/main/java/com/kaishengit/controller/HelloController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,14 +18,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MyAsyncExceptionHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/MyAsyncExceptionHandler.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1222">
+              <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,13 +53,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/timer/MyTimeTask.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/kaishengit/timer/MyTimeTaskTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/quartz/MyQuartzJob.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/kaishengit/quartz/JobTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-task.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/kaishengit/spring/ThreadPoolSchedureTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-task-annotation.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/task/MyRunnableTask.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/kaishengit/spring/SpringTaskTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/task/TaskJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/MyAsyncExceptionHandler.java" />
@@ -115,6 +71,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/kaishengit/spring/QuartzTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-datasource.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config/quartz.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/quartz/MyQuartzJob.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kaishengit/spring/SpringTaskTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-task-annotation.xml" />
       </list>
     </option>
   </component>
@@ -183,9 +142,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,17 +288,28 @@
               <item name="kaishengit" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shedule-task" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shedule-task" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaishengit" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="async" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springcache" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -356,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QuartzTest.run">
+  <component name="RunManager" selected="JUnit.SpringTaskTest.start">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -572,9 +541,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.QuartzTest.run" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserServiceTest.reg" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SpringTaskTest.start" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SpringTaskTest.start" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.QuartzTest.run" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserServiceTest.reg" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.ThreadPoolSchedureTest.test" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.JobTest.cornTrigger" />
       </list>
@@ -597,16 +566,11 @@
       <workItem from="1525614226722" duration="10368000" />
       <workItem from="1525655197641" duration="21000" />
       <workItem from="1525657710827" duration="7506000" />
+      <workItem from="1526045351078" duration="3396000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuartzTest_run - 2018.05.07 at 10h 51m 47s.xml">
-      <configuration name="QuartzTest.run" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuartzTest_run - 2018.05.07 at 10h 57m 58s.xml">
-      <configuration name="QuartzTest.run" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="QuartzTest_run - 2018.05.07 at 11h 25m 52s.xml">
       <configuration name="QuartzTest.run" configurationId="JUnit" />
     </history-entry>
@@ -617,6 +581,12 @@
       <configuration name="SpringTaskTest.start" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SpringTaskTest_start - 2018.05.07 at 00h 26m 55s.xml">
+      <configuration name="SpringTaskTest.start" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringTaskTest_start - 2018.05.11 at 21h 44m 24s.xml">
+      <configuration name="SpringTaskTest.start" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringTaskTest_start - 2018.05.11 at 21h 45m 55s.xml">
       <configuration name="SpringTaskTest.start" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ThreadPoolSchedureTest_test - 2018.05.07 at 00h 25m 32s.xml">
@@ -633,10 +603,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28014000" />
+    <option name="totallyTimeSpent" value="31410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -652,7 +623,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24809161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20229007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -679,6 +650,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/MyAsyncExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -703,9 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,9 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,20 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/quartz/JobTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/quartz/MyQuartzJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="72" lean-forward="false" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -875,42 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-task-annotation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/task/MyRunnableTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/spring/SpringTaskTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="15" column="96" lean-forward="false" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/task/TaskJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="42" column="70" lean-forward="false" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.jar!/org/springframework/aop/interceptor/SimpleAsyncUncaughtExceptionHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -922,34 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-132">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/spring/ThreadPoolSchedureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-task.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/spring/async/UserServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,57 +874,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38522">
           <caret line="1912" column="29" lean-forward="false" selection-start-line="1912" selection-start-column="29" selection-end-line="1912" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/quartz/SendWeixin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/quartz/CheckTicketJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/quartz/SpringQuartzJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <element signature="e#97#98#0" expanded="false" />
-            <element signature="e#154#155#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/quartz.properties.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/quartz.properties.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-async.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1036,29 +886,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/spring/QuartzTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/quartz.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="37" lean-forward="true" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/MyAsyncExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/quartz/MyQuartzJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/quartz/SpringQuartzJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/quartz/SendWeixin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/quartz/CheckTicketJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/spring/QuartzTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/spring/async/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/spring/ThreadPoolSchedureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/task/MyRunnableTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-quartz.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-590">
+        <state relative-caret-position="88">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-task-annotation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-task.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/task/TaskJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="42" column="70" lean-forward="false" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/spring/SpringTaskTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="15" column="101" lean-forward="false" selection-start-line="15" selection-start-column="101" selection-end-line="15" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,13 +1019,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/spring/async/MyAsyncExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/quartz/JobTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1222">
+          <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
