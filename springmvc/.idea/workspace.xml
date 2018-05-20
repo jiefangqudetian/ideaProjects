@@ -2,115 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bed6706a-1243-4d8e-89b9-3af3908dc135" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_google_inject_extensions_guice_multibindings_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_apache_shiro_shiro_all_1_3_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_apache_shiro_shiro_guice_1_3_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-commons/src/main/java/com/kaishengit/tms/dto/ResponseBean.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/dto/ResponseBean.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/tms/controller/AccountController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/tms/controller/RolesController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/tms/controller/exception/NotFoundException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/tms/shiro/ShiroRealm.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/resources/spring-shiro.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/error/401.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/edit.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/home.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/account/new.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/edit.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/edit.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/home.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/roles/new.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/layer/layer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/layer/mobile/layer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/layer/mobile/need/layer.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/layer/skin/default/icon-ext.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/layer/skin/default/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/layer/skin/default/layer.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/layer/skin/default/loading-0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/layer/skin/default/loading-1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/static/plugins/layer/skin/default/loading-2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/classes/com/kaishengit/tms/controller/RolesController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/logs/access_log.2018-04-16" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/util/CustomerUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/util/Student.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Test.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/config/ShiroConfig.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/controller/AccountController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/controller/MovieController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/controller/result/ResponseBean.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/entity/Account.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/entity/AccountExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/entity/Movie.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/entity/MovieExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/mapper/AccountMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/mapper/MovieMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/service/AccountService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/service/MovieService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/shiro/filter/JwtFilter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/shiro/realm/JwtRealm.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/shiro/token/JwtToken.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/com/kaishengit/util/JwtUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/java/rest.http" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/resources/mapper/AccountMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../vue-server/src/main/resources/mapper/MovieMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../spring" afterPath="$PROJECT_DIR$/../spring" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../springmybatis/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../springmybatis/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../ssm1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ssm1/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../ssm1/target/tomcat/logs/access_log.2018-04-11" afterPath="$PROJECT_DIR$/../ssm1/target/tomcat/logs/access_log.2018-04-11" />
-      <change beforePath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_manager_web_war_exploded.xml" afterPath="$PROJECT_DIR$/../tms/.idea/artifacts/tms_manager_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../tms/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/pom.xml" afterPath="$PROJECT_DIR$/../tms/tms-commons/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/src/main/java/com/kaishengit/tms/entity/Account.java" afterPath="$PROJECT_DIR$/../tms/tms-commons/src/main/java/com/kaishengit/tms/entity/Account.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/src/main/java/com/kaishengit/tms/entity/Permission.java" afterPath="$PROJECT_DIR$/../tms/tms-commons/src/main/java/com/kaishengit/tms/entity/Permission.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/src/main/java/com/kaishengit/tms/entity/PermissionExample.java" afterPath="$PROJECT_DIR$/../tms/tms-commons/src/main/java/com/kaishengit/tms/entity/PermissionExample.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/src/main/java/com/kaishengit/tms/entity/Roles.java" afterPath="$PROJECT_DIR$/../tms/tms-commons/src/main/java/com/kaishengit/tms/entity/Roles.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/Account.class" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/Account.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/Permission.class" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/Permission.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/PermissionExample$Criteria.class" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/PermissionExample$Criteria.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/PermissionExample$Criterion.class" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/PermissionExample$Criterion.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/PermissionExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/PermissionExample$GeneratedCriteria.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/Roles.class" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/classes/com/kaishengit/tms/entity/Roles.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/target/tms-commons-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../tms/tms-commons/target/tms-commons-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-commons/tms-commons.iml" afterPath="$PROJECT_DIR$/../tms/tms-commons/tms-commons.iml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/pom.xml" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/tms/controller/HomeController.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/tms/controller/HomeController.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/java/com/kaishengit/tms/controller/PermissionController.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/include/sider.jsp" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/views/manage/permission/new.jsp" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/classes/com/kaishengit/tms/controller/PermissionController.class" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/classes/com/kaishengit/tms/controller/PermissionController.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/logs/access_log.2018-04-13" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/src/main/resources/ehcache.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.class" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.java" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manage/permission/home_jsp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/manage/permission/home_jsp.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-manager-web/tms-manager-web.iml" afterPath="$PROJECT_DIR$/../tms/tms-manager-web/tms-manager-web.iml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/pom.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/AccountMapper.java" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/AccountMapper.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/RolesMapper.java" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/tms/mapper/RolesMapper.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/AccountServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/java/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/resources/mapper/AccountMapper.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/resources/mapper/AccountMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/resources/mapper/PermissionMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/resources/mapper/RolesMapper.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/src/main/resources/mapper/RolesMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/tms/mapper/AccountMapper.class" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/tms/mapper/AccountMapper.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/tms/mapper/RolesMapper.class" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/tms/mapper/RolesMapper.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/tms/service/impl/AccountServiceImpl.class" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/tms/service/impl/AccountServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.class" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/com/kaishengit/tms/service/impl/RolePermissionServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/mapper/AccountMapper.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/mapper/AccountMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/mapper/PermissionMapper.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/mapper/PermissionMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/mapper/RolesMapper.xml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/classes/mapper/RolesMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/target/tms-service-impl-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/target/tms-service-impl-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service-impl/tms-service-impl.iml" afterPath="$PROJECT_DIR$/../tms/tms-service-impl/tms-service-impl.iml" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java" afterPath="$PROJECT_DIR$/../tms/tms-service/src/main/java/com/kaishengit/tms/service/AccountService.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java" afterPath="$PROJECT_DIR$/../tms/tms-service/src/main/java/com/kaishengit/tms/service/RolePermissionService.java" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service/target/classes/com/kaishengit/tms/service/AccountService.class" afterPath="$PROJECT_DIR$/../tms/tms-service/target/classes/com/kaishengit/tms/service/AccountService.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service/target/classes/com/kaishengit/tms/service/RolePermissionService.class" afterPath="$PROJECT_DIR$/../tms/tms-service/target/classes/com/kaishengit/tms/service/RolePermissionService.class" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../tms/tms-service/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service/target/tms-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../tms/tms-service/target/tms-service-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/../tms/tms-service/tms-service.iml" afterPath="$PROJECT_DIR$/../tms/tms-service/tms-service.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kaishengit/entity/Customer.java" afterPath="$PROJECT_DIR$/src/main/java/com/kaishengit/entity/Customer.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kaishengit/entity/CustomerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/kaishengit/entity/CustomerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -137,60 +54,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="FileUploadController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/FileUploadController.java">
+      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/entity/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="613">
+              <caret line="46" column="18" lean-forward="false" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
               <folding>
-                <element signature="e#2254#2255#0" expanded="true" />
-                <element signature="e#2288#2289#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/HelloController.java">
+      <file leaf-file-name="CustomerUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/util/CustomerUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="154">
+              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding>
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/interception/LoginInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="29" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvc-servlet.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -224,8 +122,8 @@
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="JSP File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -247,8 +145,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/view.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/new.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/entity/Customer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/kaishengit/entity/CustomerTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/controller/HomeController.java" />
@@ -268,6 +164,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/interception/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/456.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kaishengit/entity/CustomerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/entity/Customer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/util/CustomerUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kaishengit/util/Student.java" />
       </list>
     </option>
   </component>
@@ -314,7 +215,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -323,18 +224,83 @@
               <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
               <item name="springmvc" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaishengit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaishengit" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaishengit" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springmvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-java-config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -372,13 +338,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.tomcat7">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="springmvc" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -407,6 +387,31 @@
       <option name="PACKAGE_NAME" value="com.kaishengit.entity" />
       <option name="MAIN_CLASS_NAME" value="com.kaishengit.entity.CustomerTest" />
       <option name="METHOD_NAME" value="Shuchu" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CustomerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kaishengit.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springmvc" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.kaishengit.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.kaishengit.entity.CustomerTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -503,13 +508,17 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Maven.tomcat7" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.CustomerTest.Shuchu" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CustomerTest.test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Test" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CustomerTest.Shuchu" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CustomerTest.test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CustomerTest.Shuchu" />
       </list>
     </recent_temporary>
   </component>
@@ -539,6 +548,8 @@
       <workItem from="1523419421232" duration="2216000" />
       <workItem from="1523549678331" duration="351000" />
       <workItem from="1523925999606" duration="8000" />
+      <workItem from="1526723425406" duration="152000" />
+      <workItem from="1526771179870" duration="2629000" />
     </task>
     <servers />
   </component>
@@ -546,15 +557,19 @@
     <history-entry file="CustomerTest_Shuchu - 2018.04.09 at 15h 12m 41s.xml">
       <configuration name="CustomerTest.Shuchu" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerTest_test - 2018.05.20 at 07h 11m 58s.xml">
+      <configuration name="CustomerTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53794000" />
+    <option name="totallyTimeSpent" value="56575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -564,10 +579,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46689305" sideWeight="0.49694657" order="5" side_tool="false" content_ui="tabs" x="0" y="23" width="1366" height="705" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6689304" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30076337" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3129771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -580,7 +595,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -596,30 +610,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="47" column="33" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -640,10 +630,10 @@
         <state relative-caret-position="150">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="false" />
+            <element signature="e#707#708#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
+            <element signature="e#791#792#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -683,20 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/entity/CustomerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/entity/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -744,7 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,14 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="80" column="28" lean-forward="false" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,35 +879,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/FileUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding>
-            <element signature="e#2254#2255#0" expanded="true" />
-            <element signature="e#2288#2289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/456.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -966,6 +907,92 @@
         <state relative-caret-position="22">
           <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="80" column="28" lean-forward="false" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#667#668#0" expanded="false" />
+            <element signature="e#707#708#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
+            <element signature="e#791#792#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/controller/FileUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <folding>
+            <element signature="e#2254#2255#0" expanded="false" />
+            <element signature="e#2288#2289#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kaishengit/entity/CustomerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="46" column="18" lean-forward="false" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/util/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kaishengit/util/CustomerUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding>
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
