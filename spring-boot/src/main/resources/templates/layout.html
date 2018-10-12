@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" name="456"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" id="1"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title layout:title-pattern="$LAYOUT_TITLE-$CONTENT_TITLE">布局页</title>
+    <style>
+        #con {
+            color: black;
+        }
+    </style>
+    <h1 th:text="${menu}"></h1>
+</head>
+<body>
+    <hi th:text="${menu}"></hi>
+    <h1>TMS售票系统</h1>
+    <div id="layout" layout:fragment="content"></div>
+    <h3>@kaishengit 2018</h3>
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script layout:fragment="js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{'/css/style.css'}"     href="../../static/css/style.css">
+</head>
+<body>
+
+    <h3 th:text="${message}">hello</h3>
+    <h3 th:if="${message=='你好'}">hello</h3>
+
+    <h3 class="text-danger">服务器给的数据是：[[${message}]]</h3>
+
+
+    <ul th:switch="${message}">
+        <li th:case="'你好'">你好</li>
+        <li th:case="'Jack'">Jack</li>
+        <li th:case="'*'">other</li>
+    </ul>
+
+    <ul>
+        <li th:each="n:${names}" th:text="${n}"></li>
+    </ul>
+
+    <ul>
+        <li th:each="n,iterStat:${names}" th:text="${iterStat.count+''+n}"
+            th:class="${iterStat.odd?'odd':'even'}"></li>
+    </ul>
+
+    <input type="text" th:value="${age}">
+    <span th:attr="data-id=${id}" th:text="${id}">你好</span>
+    <span th:attr="data-id=${age}" th:text="${age}">helll</span>
+
+    <a th:href="@{/user(id=${age})}" th:text="${age}"></a>
+    <a th:href="@{/user/{id}/show(id=${age})}" th:text="${age}"></a>
+
+</body>
+<script th:inline="javascript">
+
+    [# th:if="${age==null}"]
+    var age = [[${age}]];
+    var id = [[${id}]];
+    console.log(age);
+    console.log(id);
+    [/]
+
+</script>
+<script th:src="@{'/webjars/jquery/jquery.min.js'}"></script>
+<script>
+    $(function () {
+        console.log($);
+    })
+</script>
+</html>
