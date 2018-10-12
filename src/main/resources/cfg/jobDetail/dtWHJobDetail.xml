@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFTPJob>
+	<job name="wuhang-data-dispatch">
+		<hostIpAddr>192.168.159.114</hostIpAddr>
+		<hostPort>22</hostPort>
+		<baseimport>import java.math.*;</baseimport>
+		<hostDir>
+			<path>/home/user/UCCB</path>
+		</hostDir>
+		<userName>root</userName>
+		<userPassword>longwear</userPassword>
+		<hasOk>enable</hasOk>
+		
+		<jobForceEndTime>
+			<!-- 一期只支持到小时、分、秒的维度 -->
+			<!-- <endTime>12:00:00</endTime> -->
+		</jobForceEndTime>
+		
+		<weekparam>
+			<name>dayparam</name>
+			<interval>day</interval>
+		</weekparam>
+		
+		<localDir>
+			<path>E:/tmp/UCCB_REPORTS</path>
+		</localDir>
+		<dateDir>/nas/ods/risk/date</dateDir>
+		<listDir>/nas/ods/risk/list</listDir>
+		<ftpOpt>download</ftpOpt>
+		<fileList>ods001
+			<file>
+				<!-- 支持根据时间动态指定文件名 -->
+				<fileType>1</fileType>
+				<fileNameFormat>0427-ACCT-{yyyyMMdd}</fileNameFormat>
+				
+				<!-- 文件描述，扩展预留字段 -->
+				<fileDetail>0427-ACCT-当前年月日的文件</fileDetail>
+			</file>
+			<file>
+				<!-- 支持根据时间动态指定文件名 -->
+				<fileType>1</fileType>
+				<fileNameFormat>0427-CARD-{yyyyMMdd}</fileNameFormat>
+			</file>
+			<file>
+				<!-- 支持根据时间动态指定文件名 -->
+				<fileType>1</fileType>
+				<fileNameFormat>0427-NEWAPP-{yyyyMMdd}</fileNameFormat>
+			</file>
+			<file>
+				<!-- 支持根据时间动态指定文件名 -->
+				<fileType>1</fileType>
+				<fileNameFormat>0427-NEWAPP2-{yyyyMMdd}</fileNameFormat>
+			</file>
+			<file>
+				<!-- 支持根据时间动态指定文件名 -->
+				<fileType>1</fileType>
+				<fileNameFormat>0427-ODUE2-{yyyyMMdd}</fileNameFormat>
+			</file>
+			<file>
+				<!-- 支持根据时间动态指定文件名 -->
+				<fileType>1</fileType>
+				<fileNameFormat>0427-STMT-{yyyyMMdd}</fileNameFormat>
+			</file>
+		</fileList>
+	</job>
+</SFTPJob>

@@ -1,0 +1,4 @@
+[framework] 2018-10-09 13:41:18,844 - com.pa.agentbank.drs.job.Start -15   [main] ERROR  - failed to pull up ODS dispatch platform
+[framework] 2018-10-09 13:45:26,170 - com.pa.agentbank.drs.job.Start -12   [main] ERROR  - failed to pull up ODS dispatch platform
+[framework] 2018-10-09 13:54:23,205 - com.pa.agentbank.drs.job.Start -27213 [main] ERROR  - failed to pull up ODS dispatch platform
+[framework] 2018-10-09 13:59:25,521 - com.pa.agentbank.drs.job.Start -125  [main] ERROR  - failed to pull up ODS dispatch platform

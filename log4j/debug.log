@@ -1,0 +1,270 @@
+13:41:18,829  INFO Start:19 : Try to pull up ODS dispatch platform
+13:41:18,844 ERROR Start:28 : failed to pull up ODS dispatch platform
+13:41:18,844  INFO Start:32 : success to pull up ODS dispatch platform
+13:42:40,895  INFO Start:19 : Try to pull up ODS dispatch platform
+13:45:26,158  INFO Start:19 : Try to pull up ODS dispatch platform
+13:45:26,170 ERROR Start:28 : failed to pull up ODS dispatch platform
+13:45:26,170  INFO Start:32 : success to pull up ODS dispatch platform
+13:45:35,784  INFO Start:19 : Try to pull up ODS dispatch platform
+13:48:25,953  INFO Start:19 : Try to pull up ODS dispatch platform
+13:49:42,861  INFO Start:19 : Try to pull up ODS dispatch platform
+13:51:13,202  INFO Start:19 : Try to pull up ODS dispatch platform
+13:52:53,754  INFO Start:19 : Try to pull up ODS dispatch platform
+13:53:55,992  INFO Start:19 : Try to pull up ODS dispatch platform
+13:54:23,089  INFO StdSchedulerFactory:1172 : Using default implementation for ThreadExecutor
+13:54:23,105  INFO SimpleThreadPool:268 : Job execution threads will use class loader of thread: main
+13:54:23,161  INFO SchedulerSignalerImpl:61 : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+13:54:23,163  INFO QuartzScheduler:240 : Quartz Scheduler v.2.2.3 created.
+13:54:23,165  INFO RAMJobStore:155 : RAMJobStore initialized.
+13:54:23,173  INFO QuartzScheduler:305 : Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+13:54:23,173  INFO StdSchedulerFactory:1327 : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+13:54:23,173  INFO StdSchedulerFactory:1331 : Quartz scheduler version: 2.2.3
+13:54:23,205  INFO QuartzScheduler:575 : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+13:54:23,205 ERROR Start:28 : failed to pull up ODS dispatch platform
+13:54:23,209  INFO Start:32 : success to pull up ODS dispatch platform
+13:59:25,396  INFO Start:19 : Try to pull up ODS dispatch platform
+13:59:25,490  INFO StdSchedulerFactory:1172 : Using default implementation for ThreadExecutor
+13:59:25,490  INFO SimpleThreadPool:268 : Job execution threads will use class loader of thread: main
+13:59:25,506  INFO SchedulerSignalerImpl:61 : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+13:59:25,506  INFO QuartzScheduler:240 : Quartz Scheduler v.2.2.3 created.
+13:59:25,506  INFO RAMJobStore:155 : RAMJobStore initialized.
+13:59:25,506  INFO QuartzScheduler:305 : Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+13:59:25,506  INFO StdSchedulerFactory:1327 : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+13:59:25,506  INFO StdSchedulerFactory:1331 : Quartz scheduler version: 2.2.3
+13:59:25,521  INFO QuartzScheduler:575 : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+13:59:25,521 ERROR Start:28 : failed to pull up ODS dispatch platform
+13:59:25,521  INFO Start:32 : success to pull up ODS dispatch platform
+14:01:01,978  INFO Start:19 : Try to pull up ODS dispatch platform
+14:01:02,072  INFO StdSchedulerFactory:1172 : Using default implementation for ThreadExecutor
+14:01:02,072  INFO SimpleThreadPool:268 : Job execution threads will use class loader of thread: main
+14:01:02,088  INFO SchedulerSignalerImpl:61 : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:01:02,088  INFO QuartzScheduler:240 : Quartz Scheduler v.2.2.3 created.
+14:01:02,088  INFO RAMJobStore:155 : RAMJobStore initialized.
+14:01:02,088  INFO QuartzScheduler:305 : Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:01:02,088  INFO StdSchedulerFactory:1327 : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+14:01:02,088  INFO StdSchedulerFactory:1331 : Quartz scheduler version: 2.2.3
+14:01:02,103  INFO QuartzScheduler:575 : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+14:01:02,103  INFO QuartzScheduler:575 : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+14:01:02,103  INFO Start:32 : success to pull up ODS dispatch platform
+14:02:00,001  INFO DataDispatchJob:28 : 任务：jiangyin-data-dispatch开始执行
+14:02:00,008  INFO DataDispatchJob:77 : jiangyin-data-dispatch开始上传文件
+14:02:00,008  INFO DataDispatchJob:28 : 任务：wuhang-data-dispatch开始执行
+14:02:00,008  INFO DataDispatchJob:77 : wuhang-data-dispatch开始上传文件
+14:02:00,025  INFO SFTPUtilImpl:71 : Session created
+14:02:00,025  INFO SFTPUtilImpl:71 : Session created
+14:02:00,738  INFO SFTPUtilImpl:102 : Session connected
+14:02:00,738  INFO SFTPUtilImpl:103 : Opening Channel
+14:02:00,754  INFO SFTPUtilImpl:102 : Session connected
+14:02:00,754  INFO SFTPUtilImpl:103 : Opening Channel
+14:02:01,129  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@40a0d7ef
+14:02:01,129  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@32b52aee
+14:02:01,147  INFO DataDispatchJob:91 : jiangyin-data-dispatch文件上传成功
+14:02:01,147  INFO DataDispatchJob:91 : wuhang-data-dispatch文件上传成功
+14:02:01,147  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:02:01,147  INFO DataDispatchJob:97 : 开始备份本地文件
+14:02:01,147  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:02:01,147  INFO DataDispatchJob:97 : 开始备份本地文件
+14:02:01,147  INFO DataDispatchJob:34 : 任务：wuhang-data-dispatch执行失败，E:\tmp\wuhang-data-dispatch (拒绝访问。)5分钟后开始第一次重试
+14:02:01,147  INFO DataDispatchJob:34 : 任务：jiangyin-data-dispatch执行失败，E:\tmp\jiangyin-data-dispatch (拒绝访问。)5分钟后开始第一次重试
+14:04:00,015  INFO DataDispatchJob:28 : 任务：jiangyin-data-dispatch开始执行
+14:04:00,017  INFO DataDispatchJob:77 : jiangyin-data-dispatch开始上传文件
+14:04:00,017  INFO SFTPUtilImpl:71 : Session created
+14:04:00,017  INFO DataDispatchJob:28 : 任务：wuhang-data-dispatch开始执行
+14:04:00,018  INFO DataDispatchJob:77 : wuhang-data-dispatch开始上传文件
+14:04:00,018  INFO SFTPUtilImpl:71 : Session created
+14:04:00,114  INFO SFTPUtilImpl:102 : Session connected
+14:04:00,114  INFO SFTPUtilImpl:103 : Opening Channel
+14:04:00,149  INFO SFTPUtilImpl:102 : Session connected
+14:04:00,149  INFO SFTPUtilImpl:103 : Opening Channel
+14:04:00,320  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@731b236d
+14:04:00,320  INFO DataDispatchJob:91 : wuhang-data-dispatch文件上传成功
+14:04:00,320  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:04:00,320  INFO DataDispatchJob:97 : 开始备份本地文件
+14:04:00,320  INFO DataDispatchJob:34 : 任务：wuhang-data-dispatch执行失败，E:\tmp\wuhang-data-dispatch (拒绝访问。)5分钟后开始第一次重试
+14:04:00,336  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@252f4e97
+14:04:00,336  INFO DataDispatchJob:91 : jiangyin-data-dispatch文件上传成功
+14:04:00,336  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:04:00,336  INFO DataDispatchJob:97 : 开始备份本地文件
+14:04:00,336  INFO DataDispatchJob:34 : 任务：jiangyin-data-dispatch执行失败，E:\tmp\jiangyin-data-dispatch (拒绝访问。)5分钟后开始第一次重试
+14:06:00,011  INFO DataDispatchJob:28 : 任务：jiangyin-data-dispatch开始执行
+14:06:00,012  INFO DataDispatchJob:77 : jiangyin-data-dispatch开始上传文件
+14:06:00,012  INFO SFTPUtilImpl:71 : Session created
+14:06:00,012  INFO DataDispatchJob:28 : 任务：wuhang-data-dispatch开始执行
+14:06:00,013  INFO DataDispatchJob:77 : wuhang-data-dispatch开始上传文件
+14:06:00,013  INFO SFTPUtilImpl:71 : Session created
+14:06:00,108  INFO SFTPUtilImpl:102 : Session connected
+14:06:00,108  INFO SFTPUtilImpl:103 : Opening Channel
+14:06:00,127  INFO SFTPUtilImpl:102 : Session connected
+14:06:00,127  INFO SFTPUtilImpl:103 : Opening Channel
+14:06:00,345  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@6898ece3
+14:06:00,345  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@93b35f4
+14:06:00,345  INFO DataDispatchJob:91 : jiangyin-data-dispatch文件上传成功
+14:06:00,345  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:06:00,345  INFO DataDispatchJob:97 : 开始备份本地文件
+14:06:00,345  INFO DataDispatchJob:91 : wuhang-data-dispatch文件上传成功
+14:06:00,345  INFO DataDispatchJob:34 : 任务：jiangyin-data-dispatch执行失败，E:\tmp\jiangyin-data-dispatch (拒绝访问。)5分钟后开始第一次重试
+14:06:00,345  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:06:00,345  INFO DataDispatchJob:97 : 开始备份本地文件
+14:06:00,345  INFO DataDispatchJob:34 : 任务：wuhang-data-dispatch执行失败，E:\tmp\wuhang-data-dispatch (拒绝访问。)5分钟后开始第一次重试
+14:07:01,157  INFO DataDispatchJob:77 : wuhang-data-dispatch开始上传文件
+14:07:01,157  INFO DataDispatchJob:77 : jiangyin-data-dispatch开始上传文件
+14:07:01,158  INFO SFTPUtilImpl:71 : Session created
+14:07:01,158  INFO SFTPUtilImpl:71 : Session created
+14:07:01,254  INFO SFTPUtilImpl:102 : Session connected
+14:07:01,254  INFO SFTPUtilImpl:103 : Opening Channel
+14:07:01,269  INFO SFTPUtilImpl:102 : Session connected
+14:07:01,269  INFO SFTPUtilImpl:103 : Opening Channel
+14:07:01,488  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@276a4e7
+14:07:01,488  INFO DataDispatchJob:91 : wuhang-data-dispatch文件上传成功
+14:07:01,488  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:07:01,488  INFO DataDispatchJob:97 : 开始备份本地文件
+14:07:01,488  INFO DataDispatchJob:40 : 任务：wuhang-data-dispatch执行失败，E:\tmp\wuhang-data-dispatch (拒绝访问。)10分钟后开始第二次重试
+14:07:01,504  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@23acfcd0
+14:07:01,504  INFO DataDispatchJob:91 : jiangyin-data-dispatch文件上传成功
+14:07:01,504  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:07:01,504  INFO DataDispatchJob:97 : 开始备份本地文件
+14:07:01,504  INFO DataDispatchJob:40 : 任务：jiangyin-data-dispatch执行失败，E:\tmp\jiangyin-data-dispatch (拒绝访问。)10分钟后开始第二次重试
+14:12:22,267  INFO Start:19 : Try to pull up ODS dispatch platform
+14:12:22,345  INFO StdSchedulerFactory:1172 : Using default implementation for ThreadExecutor
+14:12:22,345  INFO SimpleThreadPool:268 : Job execution threads will use class loader of thread: main
+14:12:22,360  INFO SchedulerSignalerImpl:61 : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:12:22,360  INFO QuartzScheduler:240 : Quartz Scheduler v.2.2.3 created.
+14:12:22,360  INFO RAMJobStore:155 : RAMJobStore initialized.
+14:12:22,360  INFO QuartzScheduler:305 : Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:12:22,360  INFO StdSchedulerFactory:1327 : Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+14:12:22,360  INFO StdSchedulerFactory:1331 : Quartz scheduler version: 2.2.3
+14:12:22,376  INFO QuartzScheduler:575 : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+14:12:22,376  INFO QuartzScheduler:575 : Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+14:12:22,376  INFO Start:32 : success to pull up ODS dispatch platform
+14:14:00,011  INFO DataDispatchJob:28 : 任务：jiangyin-data-dispatch开始执行
+14:14:00,011  INFO DataDispatchJob:77 : jiangyin-data-dispatch开始上传文件
+14:14:00,011  INFO DataDispatchJob:28 : 任务：wuhang-data-dispatch开始执行
+14:14:00,018  INFO DataDispatchJob:77 : wuhang-data-dispatch开始上传文件
+14:14:00,020  INFO SFTPUtilImpl:71 : Session created
+14:14:00,020  INFO SFTPUtilImpl:71 : Session created
+14:14:00,652  INFO SFTPUtilImpl:102 : Session connected
+14:14:00,652  INFO SFTPUtilImpl:103 : Opening Channel
+14:14:00,652  INFO SFTPUtilImpl:102 : Session connected
+14:14:00,668  INFO SFTPUtilImpl:103 : Opening Channel
+14:14:00,862  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@6d784f96
+14:14:00,862  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@6e3dff47
+14:14:00,862  INFO DataDispatchJob:91 : jiangyin-data-dispatch文件上传成功
+14:14:00,862  INFO DataDispatchJob:91 : wuhang-data-dispatch文件上传成功
+14:14:00,862  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:14:00,862  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:14:00,862  INFO DataDispatchJob:97 : 开始备份本地文件
+14:14:00,862  INFO DataDispatchJob:97 : 开始备份本地文件
+14:14:00,877  INFO DataDispatchJob:127 : 文件备份本地结束
+14:14:00,877  INFO DataDispatchJob:127 : 文件备份本地结束
+14:14:00,877  INFO DataDispatchJob:130 : 开始删除本地文件
+14:14:00,877  INFO DataDispatchJob:130 : 开始删除本地文件
+14:14:00,877  INFO DataDispatchJob:134 : 本地文件删除成功
+14:14:00,877  INFO DataDispatchJob:134 : 本地文件删除成功
+14:14:00,877  INFO DataDispatchJob:32 : 任务：wuhang-data-dispatch执行成功
+14:14:00,877  INFO DataDispatchJob:32 : 任务：jiangyin-data-dispatch执行成功
+14:16:00,009  INFO DataDispatchJob:28 : 任务：jiangyin-data-dispatch开始执行
+14:16:00,010  INFO DataDispatchJob:77 : jiangyin-data-dispatch开始上传文件
+14:16:00,010  INFO SFTPUtilImpl:71 : Session created
+14:16:00,010  INFO DataDispatchJob:28 : 任务：wuhang-data-dispatch开始执行
+14:16:00,011  INFO DataDispatchJob:77 : wuhang-data-dispatch开始上传文件
+14:16:00,011  INFO SFTPUtilImpl:71 : Session created
+14:16:00,075  INFO SFTPUtilImpl:102 : Session connected
+14:16:00,075  INFO SFTPUtilImpl:103 : Opening Channel
+14:16:00,131  INFO SFTPUtilImpl:102 : Session connected
+14:16:00,146  INFO SFTPUtilImpl:103 : Opening Channel
+14:16:00,256  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@2110de6d
+14:16:00,256  INFO DataDispatchJob:91 : wuhang-data-dispatch文件上传成功
+14:16:00,256  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:16:00,256  INFO DataDispatchJob:97 : 开始备份本地文件
+14:16:00,256  INFO DataDispatchJob:127 : 文件备份本地结束
+14:16:00,256  INFO DataDispatchJob:130 : 开始删除本地文件
+14:16:00,256  INFO DataDispatchJob:134 : 本地文件删除成功
+14:16:00,256  INFO DataDispatchJob:32 : 任务：wuhang-data-dispatch执行成功
+14:16:00,287  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@5e8903d9
+14:16:00,287  INFO DataDispatchJob:91 : jiangyin-data-dispatch文件上传成功
+14:16:00,287  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:16:00,287  INFO DataDispatchJob:97 : 开始备份本地文件
+14:16:00,287  INFO DataDispatchJob:127 : 文件备份本地结束
+14:16:00,287  INFO DataDispatchJob:130 : 开始删除本地文件
+14:16:00,287  INFO DataDispatchJob:134 : 本地文件删除成功
+14:16:00,287  INFO DataDispatchJob:32 : 任务：jiangyin-data-dispatch执行成功
+14:18:00,011  INFO DataDispatchJob:28 : 任务：jiangyin-data-dispatch开始执行
+14:18:00,012  INFO DataDispatchJob:77 : jiangyin-data-dispatch开始上传文件
+14:18:00,012  INFO DataDispatchJob:28 : 任务：wuhang-data-dispatch开始执行
+14:18:00,012  INFO SFTPUtilImpl:71 : Session created
+14:18:00,012  INFO DataDispatchJob:77 : wuhang-data-dispatch开始上传文件
+14:18:00,012  INFO SFTPUtilImpl:71 : Session created
+14:18:00,077  INFO SFTPUtilImpl:102 : Session connected
+14:18:00,077  INFO SFTPUtilImpl:103 : Opening Channel
+14:18:00,108  INFO SFTPUtilImpl:102 : Session connected
+14:18:00,108  INFO SFTPUtilImpl:103 : Opening Channel
+14:18:00,264  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@7724b9d6
+14:18:00,288  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@5f2fcd98
+14:18:00,324  INFO DataDispatchJob:91 : jiangyin-data-dispatch文件上传成功
+14:18:00,324  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:18:00,324  INFO DataDispatchJob:97 : 开始备份本地文件
+14:18:00,340  INFO DataDispatchJob:127 : 文件备份本地结束
+14:18:00,340  INFO DataDispatchJob:130 : 开始删除本地文件
+14:18:00,340  INFO DataDispatchJob:134 : 本地文件删除成功
+14:18:00,340  INFO DataDispatchJob:32 : 任务：jiangyin-data-dispatch执行成功
+14:18:00,340  INFO DataDispatchJob:91 : wuhang-data-dispatch文件上传成功
+14:18:00,340  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:18:00,340  INFO DataDispatchJob:97 : 开始备份本地文件
+14:18:00,352  INFO DataDispatchJob:127 : 文件备份本地结束
+14:18:00,352  INFO DataDispatchJob:130 : 开始删除本地文件
+14:18:00,352  INFO DataDispatchJob:134 : 本地文件删除成功
+14:18:00,353  INFO DataDispatchJob:32 : 任务：wuhang-data-dispatch执行成功
+14:20:00,005  INFO DataDispatchJob:28 : 任务：jiangyin-data-dispatch开始执行
+14:20:00,007  INFO DataDispatchJob:77 : jiangyin-data-dispatch开始上传文件
+14:20:00,007  INFO SFTPUtilImpl:71 : Session created
+14:20:00,007  INFO DataDispatchJob:28 : 任务：wuhang-data-dispatch开始执行
+14:20:00,007  INFO DataDispatchJob:77 : wuhang-data-dispatch开始上传文件
+14:20:00,008  INFO SFTPUtilImpl:71 : Session created
+14:20:00,087  INFO SFTPUtilImpl:102 : Session connected
+14:20:00,087  INFO SFTPUtilImpl:103 : Opening Channel
+14:20:00,126  INFO SFTPUtilImpl:102 : Session connected
+14:20:00,126  INFO SFTPUtilImpl:103 : Opening Channel
+14:20:00,318  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@4dd8ce3d
+14:20:00,334  INFO SFTPUtilImpl:128 : Connected successfully to ftpHost = 192.168.159.114ftpPort=22,as ftpUserName = root, returning: com.jcraft.jsch.ChannelSftp@d30bb62
+14:20:00,537  INFO DataDispatchJob:91 : wuhang-data-dispatch文件上传成功
+14:20:00,537  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:20:00,537  INFO DataDispatchJob:97 : 开始备份本地文件
+14:20:00,552  INFO DataDispatchJob:91 : jiangyin-data-dispatch文件上传成功
+14:20:00,552  INFO SFTPUtilImpl:364 : SFTP client destoryed.
+14:20:00,552  INFO DataDispatchJob:97 : 开始备份本地文件
+14:20:00,708  INFO DataDispatchJob:127 : 文件备份本地结束
+14:20:00,708  INFO DataDispatchJob:130 : 开始删除本地文件
+14:20:00,708  INFO DataDispatchJob:134 : 本地文件删除成功
+14:20:00,708  INFO DataDispatchJob:32 : 任务：wuhang-data-dispatch执行成功
+14:20:00,708  INFO DataDispatchJob:127 : 文件备份本地结束
+14:20:00,708  INFO DataDispatchJob:130 : 开始删除本地文件
+14:20:00,708  INFO DataDispatchJob:134 : 本地文件删除成功
+14:20:00,708  INFO DataDispatchJob:32 : 任务：jiangyin-data-dispatch执行成功

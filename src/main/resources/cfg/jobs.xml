@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs>
+	<job>
+		<!-- 任务名称 -->
+		<name>wuhang-ODS</name>
+		<!-- 任务分组（扩展预留字段）可不配置 -->
+		<group></group>
+		<!-- ftp文件路径（支持正则表达式） -->
+		<jobDescription>乌行ODS任务</jobDescription>
+		<!-- 每天凌晨2点执行定时任务 -->
+		<cornExpression>0 0 2 * * ? *</cornExpression>
+		<jobClass>com.pa.agentbank.drs.job.FileOperationJob</jobClass>
+		<jobDetailPath>cfg/jobDetail/sftpJobDetail.xml</jobDetailPath>
+		<enable>disable</enable>
+	</job>
+	<job>
+		<!-- 任务名称 -->
+		<name>wuhang-data-dispatch</name>
+		<!-- 任务分组（扩展预留字段）可不配置 -->
+		<group></group>
+		<!-- ftp文件路径（支持正则表达式） -->
+		<jobDescription>乌行数据收发平台</jobDescription>
+		<!-- 每天凌晨2点执行定时任务 -->
+		<cornExpression>0 0/2 * * * ? *</cornExpression>
+		<jobClass>com.pa.agentbank.drs.job.DataDispatchJob</jobClass>
+		<jobDetailPath>cfg/jobDetail/dtWHJobDetail.xml</jobDetailPath>
+		<enable>enable</enable>
+	</job>
+	<job>
+		<!-- 任务名称 -->
+		<name>jiangyin-data-dispatch</name>
+		<!-- 任务分组（扩展预留字段）可不配置 -->
+		<group></group>
+		<!-- ftp文件路径（支持正则表达式） -->
+		<jobDescription>江阴数据收发平台</jobDescription>
+		<!-- 每天凌晨2点执行定时任务 -->
+		<cornExpression>0 0/2 * * * ? *</cornExpression>
+		<jobClass>com.pa.agentbank.drs.job.DataDispatchJob</jobClass>
+		<jobDetailPath>cfg/jobDetail/dtJYJobDetail.xml</jobDetailPath>
+		<enable>enable</enable>
+	</job>
+</jobs>
